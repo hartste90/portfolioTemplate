@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Kate Hart</title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
+
+    <script src="cordova.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+
+
+      <div class="header">
+
+        <ul id="menu" class="mobile_only">
+          <li> 
+              <a class="nav-button active" href="#">home</a></li>
+            <li> 
+              <a class="nav-button" href="about.html">about</a></li>
+            <li>  
+              <a class="nav-button" href="resume.html">resumé</a></li>
+            <li> 
+              <a class="nav-button" href="photos.html">photos</a></li>
+            <li> 
+              <a class="nav-button" href="contact.html">contact</a></li>
+        </ul>
+
+
+        <div id="logo" class="logo">
+          <img src="img/logo.png">
+          <div class="logo-subtitle">actor. singer. writer. dog-mommy.</div>
+        </div>
+        <div class="nav-container">
+          <ul id = "nav-button-list" class="nav-button-list">
+            <li> 
+              <a class="nav-button active" href="#">home</a></li>
+            <li> 
+              <a class="nav-button" href="about.html">about</a></li>
+            <li>  
+              <a class="nav-button" href="resume.html">resumé</a></li>
+            <li> 
+              <a class="nav-button" href="photos.html">photos</a></li>
+            <li> 
+              <a class="nav-button" href="contact.html">contact</a></li>
+          </ul>
+        </div>
+
+      </div>        
+
+      <div class="content">
+        <center>
+          <ul class="welcome-list">
+            <li>
+              <img class="welcome-photo" src="img/welcome_1.jpg">
+            </li>
+            <li>
+              <img class="welcome-photo" src="img/welcome_2.jpg">
+            </li>
+            <li>
+              <img class="welcome-photo" src="img/welcome_3.jpg">
+            </li>
+          </ul>
+        </center>
+      </div>
+
+      <div class="footer">
+        <div class="footer_wrapper">
+          
+          <center class="mobile_only">
+            <a href="#" id="back-to-top">Back to Top</a>
+          </center>
+          <div class="footer-text">
+              <a href="https://www.facebook.com/katherine.marie.735">facebook: katherine.marie.735</a>
+            <br>
+            <button id="btn" data-clipboard-text="katherine.marie.hart@gmail.com">
+              email: katherine.marie.hart @ gmail [dot] com </a>
+            </button>
+          </div>
+
+          <div class="social_icons_wrapper">
+            <ul id = "social-icon-button-list" class="social-icon-button-list">
+              <li> 
+                <a href=https://www.facebook.com/katherine.marie.735>
+                  <img class="social-icon-button"  src="img/socialIcons/facebook-icon.png">
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+
+        </div>
+      </div>
+
+
+      <script>
+      if ($('#back-to-top').length) {
+              var scrollTop = $(window).scrollTop();
+          $('#back-to-top').on('click', function (e) {
+              e.preventDefault();
+              $('html,body').animate({
+                  scrollTop: 0
+              }, 700);
+          });
+      }
+      </script>
+
+      <script>
+
+        // Tooltip
+
+        $('button').tooltip({
+          trigger: 'click',
+          placement: 'top'
+        });
+
+        function setTooltip(btn, message) {
+          $(btn).tooltip('hide')
+            .attr('data-original-title', message)
+            .tooltip('show');
+        }
+
+        function hideTooltip(btn) {
+          setTimeout(function() {
+            $(btn).tooltip('hide');
+          }, 1000);
+        }
+
+        // Clipboard
+
+        var clipboard = new Clipboard('button');
+
+        clipboard.on('success', function(e) {
+          setTooltip(e.trigger, 'Copied to clipboard!');
+          hideTooltip(e.trigger);
+        });
+
+        clipboard.on('error', function(e) {
+          setTooltip(e.trigger, 'Failed!');
+          hideTooltip(e.trigger);
+        });
+        </script>
+
+        <script>
+          $(function(){
+            $('#menu').slicknav();
+          });
+        </script>
+
+  </body>
+</html>
