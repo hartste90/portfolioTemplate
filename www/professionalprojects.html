@@ -3,25 +3,17 @@
    <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <link rel="icon" type="image/png" href="img/icons/favicon.png"/>    
-    <title>Steve Hart: about</title>
+    <link rel="icon" type="image/png" href="img/icons/favicon.png"/>        
+    <title>Steve Hart: professional projects</title>
+
     <link rel="manifest" href="manifest.json">
 
-    <!-- un-comment this code to enable service worker
-    <script>
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('service-worker.js')
-          .then(() => console.log('service worker installed'))
-          .catch(err => console.log('Error', err));
-      }
-    </script>-->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"/>
 
-    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
@@ -29,26 +21,33 @@
     <link href="css/ionic.app.css" rel="stylesheet">
 
     -->
-
+    <link href="assets/stylesheets/bootstrap.min.css" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="release/featherlight.min.css" />
+    <link type="text/css" rel="stylesheet" href="release/featherlight.gallery.min.css" />
+  
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
     <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
+    
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
   </head>
-  <body ng-app="starter">
+  <body>
 
       <div class="header">
 
         <ul id="menu" class="mobile_only">
           <li> 
-              <a class="nav-button active" href="#">about</a></li>
+              <a class="nav-button active" href="about.html">about</a></li>
             <li> 
-              <a class="nav-button" href="professionalprojects.html">professional projects</a></li>
+              <a class="nav-button" href="#">professional projects</a></li>
             <li>  
               <a class="nav-button" href="personalprojects.html">personal projects</a></li>
         </ul>
@@ -61,33 +60,83 @@
         <div class="nav-container">
           <ul id = "nav-button-list" class="nav-button-list">
             <li> 
-              <a class="nav-button active" href="#">about</a></li>
+              <a class="nav-button active" href="about.html">about</a></li>
             <li> 
-              <a class="nav-button" href="professionalprojects.html">professional projects</a></li>
+              <a class="nav-button" href="#">professional projects</a></li>
             <li>  
               <a class="nav-button" href="personalprojects.html">personal projects</a></li>
           </ul>
         </div>
 
-      </div>          
+      </div>         
 
       <div class="content">
-      <center>
-        <div class="about_wrapper">
-          <img class="about_photobox" src="img/photobox_2.jpg">
-          <div class="about_content">
-            <div class="about_subtitle">
-            about
-            </div>
-           <p>Kate Hart is a Boston born actor who has now relocated to Los Angeles permanently and is still trying to figure out how to not be able to walk everywhere she needs to go. She graduated from Emerson College in 2014 with a BFA in Acting, where she honed her skills of scene study, movement, dance, voice, stage combat and how to make it through classes and rehearsals on only Dunkin Donuts coffee and a power bar, While at Emerson she was able to study under many great professors well respected in the industry, act in 7 major productions, lead an a cappella group and direct her first student made films. </p>
 
-           <p>Upon graduating, Kate packed up her car and road tripped out to Los Angeles, where she has become a Company Member at Archway Theater, started an adult a cappella group and direct her first professional production. She loves staying busy and always having a new project in the works as she finishes her current one, which is obvious in her insane back to back productions of Twelfth Night, Hamlet and Oedipus/Antigone which took up her entire first 6 months in Los Angeles.</p>
-           
-           <p>She is passionate about wrestling her puppy, going on long runs and ending days with a glass of wine and her most reliable relationship, Netflix. She always has her trusty planner nearby as well as a Walking Dead notebook where she keeps all her ideas and notes as she walks around. She has tried being vegan to fit in in Los Angeles, but it didn't work (meat is delicious). The best advice she ever received came from a professor at Emerson, "find your tribe. make passionate art" And she strives to do just that.</p>
+        <section data-featherlight-gallery data-featherlight-filter="a">
+          <div class="photos_subtitle">headshots</div>
 
-          </div>
-        </div>
-        </center>
+          <ul class="photos_thumbnail_list ">
+            <li class="photos_thumbnail tall">
+              <a href="img/headshot_1.jpg"><img src="img/headshot_1_thumb.jpg"></a>
+            </li>
+            <li class="photos_thumbnail tall">
+              <a href="img/headshot_2.jpg"><img src="img/headshot_2_thumb.jpg"></a>
+            </li>
+            <li class="photos_thumbnail tall">
+              <a href="img/headshot_3.jpg"><img src="img/headshot_3_thumb.jpg"></a>
+            </li>
+            <li class="photos_thumbnail tall">
+              <a href="img/headshot_4.jpg"><img src="img/headshot_4_thumb.jpg"></a>
+            </li>
+            <li class="photos_thumbnail tall">
+              <a href="img/headshot_5.jpg"><img src="img/headshot_5_thumb.jpg"></a>
+            </li>
+            <li class="photos_thumbnail tall"></li>
+            <li class="photos_thumbnail tall"></li>
+
+          </ul?>
+        </section>
+
+        <section data-featherlight-gallery data-featherlight-filter="a">
+
+          <div class="photos_subtitle">production photos</div>
+
+           <ul class="photos_thumbnail_list">
+            <li class="photos_thumbnail wide">
+              <a href="img/singing_1.jpg"><img src="img/singing_1_thumb.jpg"></a>
+            </li>
+            <li class="photos_thumbnail wide">
+              <a href="img/singing_2.jpg"><img src="img/singing_2_thumb.jpg"></a>
+            </li>
+            <li class="photos_thumbnail tall">
+              <a href="img/stage_1.jpg"><img src="img/stage_1_thumb.jpg"></a>
+            </li>
+            <li class="photos_thumbnail wide">
+              <a href="img/stage_2.jpg"><img src="img/stage_2_thumb.jpg"></a>
+            </li>
+            
+
+          </ul>
+          <ul class="photos_thumbnail_list">
+            <li class="photos_thumbnail wide">
+              <a href="img/stage_3.jpg"><img src="img/stage_3_thumb.jpg"></a>
+            </li>
+            <li class="photos_thumbnail wide">
+              <a href="img/stage_4.jpg"><img src="img/stage_4_thumb.jpg"></a>
+            </li>
+            <li class="photos_thumbnail wide">
+              <a href="img/stage_5.jpg"><img src="img/stage_5_thumb.jpg"></a>
+            </li>
+            <li class="photos_thumbnail tall">
+              <a href="img/stage_6.jpg"><img src="img/stage_6_thumb.jpg"></a>
+            </li>
+          </ul>
+
+
+
+        </section>
+
+
       </div>
 
       <div class="footer">
@@ -117,7 +166,6 @@
 
         </div>
       </div>
-
     
       <script>
       if ($('#back-to-top').length) {
@@ -166,6 +214,34 @@
           setTooltip(e.trigger, 'Failed!');
           hideTooltip(e.trigger);
         });
+        </script>
+
+        
+
+        <script src="assets/javascripts/jquery-1.7.0.min.js"></script>
+        <script src="release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="release/featherlight.gallery.min.js" type="text/javascript" charset="utf-8"></script>
+
+        <script>
+          $(document).ready(function(){
+            $('.gallery').featherlightGallery({
+              gallery: {
+                fadeIn: 300,
+                fadeOut: 300
+              },
+              openSpeed:    300,
+              closeSpeed:   300
+            });
+            $('.gallery2').featherlightGallery({
+              gallery: {
+                next: 'next »',
+                previous: '« previous'
+              },
+              variant: 'featherlight-gallery2'
+            });
+          });
+
+          
         </script>
 
         <script>
