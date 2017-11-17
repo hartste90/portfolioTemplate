@@ -41,7 +41,7 @@ function love.load()
 	la = love.audio;
 	lg.setMode(600,600,false);  --set to TRUE for FULL SCREEN
 	lg.setCaption("Word Warriors");
-	lg.setIcon(lg.newImage("IMAGES/knight_cover.png"));
+	lg.setIcon(lg.newImage("img/knight_cover.png"));
 	--LOAD FONT
 	font = lg.newImageFont("newFont.png", " abcdefghijklmnopqrstuvwxyz");
 	--LOAD SOUNDS
@@ -83,7 +83,7 @@ function love.load()
 	border = lg.newImage('IMAGES/border.png');
 	victory = lg.newImage('IMAGES/victory.png');
 	defeat = lg.newImage('IMAGES/defeat.png');
-	background = lg.newImage("IMAGES/background.png");
+	background = lg.newImage("img/background.png");
 	--LOAD ANIMATION IMAGES
 	priest_stand = lg.newImage("ANIMATIONS/priest_spritesheet.png");
 	priest_death = lg.newImage("ANIMATIONS/priest_death.png");
