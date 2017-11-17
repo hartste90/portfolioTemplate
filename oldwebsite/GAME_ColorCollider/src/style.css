@@ -1,0 +1,11 @@
+body {
+    font-family: 'Changa One', cursive;
+}
+
+canvas {
+	border-style: solid;
+	border-width: medium;
+	border-color: black;
+	background-color: #000000;
+	cursor: none;
+}

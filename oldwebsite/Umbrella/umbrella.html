@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Umbrella</title>
+		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+		<script type="text/javascript">
+		<!--
+		var unityObjectUrl = "http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js";
+		if (document.location.protocol == 'https:')
+			unityObjectUrl = unityObjectUrl.replace("http://", "https://ssl-");
+		document.write('<script type="text\/javascript" src="' + unityObjectUrl + '"><\/script>');
+		-->
+		</script>
+		<script type="text/javascript">
+		<!--
+			var config = {
+				width: 960, 
+				height: 600,
+				params: { enableDebugging:"0" }
+				
+			};
+			var u = new UnityObject2(config);
+
+			jQuery(function() {
+
+				var $missingScreen = jQuery("#unityPlayer").find(".missing");
+				var $brokenScreen = jQuery("#unityPlayer").find(".broken");
+				$missingScreen.hide();
+				$brokenScreen.hide();
+				
+				u.observeProgress(function (progress) {
+					switch(progress.pluginStatus) {
+						case "broken":
+							$brokenScreen.find("a").click(function (e) {
+								e.stopPropagation();
+								e.preventDefault();
+								u.installPlugin();
+								return false;
+							});
+							$brokenScreen.show();
+						break;
+						case "missing":
+							$missingScreen.find("a").click(function (e) {
+								e.stopPropagation();
+								e.preventDefault();
+								u.installPlugin();
+								return false;
+							});
+							$missingScreen.show();
+						break;
+						case "installed":
+							$missingScreen.remove();
+						break;
+						case "first":
+						break;
+					}
+				});
+				u.initPlugin(jQuery("#unityPlayer")[0], "Umbrella.unity3d");
+			});
+		-->
+		</script>
+		<link href='http://fonts.googleapis.com/css?family=Marko+One' rel='stylesheet' type='text/css'>
+		<link href="umbrella_style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div id="page">
+			<h1>UMBRELLA</h1>
+			
+			</br></br></br>				
+			<p>
+			&nbsp;&nbsp;&nbsp;&nbsp; Umbrella is a fast paced Unity game where the player uses their umbrella to jump, float, and fight to survive enemies and even the harsh weather.  Developed as a survival game experiment at UMBC's game development laboratory, this 10 week project utlized AGILE Game development techniques and weekly Sprint implementation.  The team used Tortoise repository tools to manage the project and made sure each team member played an influential role in the development, beta, and eventual launch of our game.  </br> </br>
+			&nbsp;&nbsp;&nbsp;&nbsp; The project was introduced at UMBC's Undergraduate Research and Creative Achievement Day to wonderful support from players and the rest of the development community.
+			</p>
+			</br></br>
+			A very special thank you to the mentors that made this project possible: Dr. Marc Olano, Benjamin Walsh, and Yuzun Kang!
+			
+			<a href="#gameplayer"><h1><u> --CLICK HERE TO PLAY-- </u></h1> </a>
+			
+			<TABLE>
+				<TR>
+				   	<TD>	
+						<img src="screencap2.PNG" style="border: 2px solid grey" width="304" height="228">
+					</TD>
+					<TD>
+						<img src="screencap1.PNG" style="border: 2px solid grey" width="304" height="228">
+					</TD>
+					<TD>
+						<img src="screencap4.PNG" style="border: 2px solid grey" width="304" height="228">
+					</TD>
+				</TR>
+			</TABLE>
+			
+			<p>
+			<h3>
+				Umbrella is a project completed for and with the help of The University of Maryland - Baltimore Countys resources and computers and is not available for sale. 
+			</h3>
+			</p>
+			
+			<TABLE>
+				<TR>
+					<TH>	Controls 	</TH>
+					<TH> 	Development Team	</TH>
+				</TR>
+				<TD></br></TD>
+				<TR>
+				   	<TD>	
+				   		<TABLE>
+				   			<TR>
+				   				<TD>	Movement: </TD>
+				   				<TD>	Arrow Keys	</TD>
+				   			</TR>
+				   			<TR>
+				   				<TD>	Attack: </TD>
+				   				<TD>	X	</TD>
+				   			</TR>
+				   			<TR>
+				   				<TD>	Open/Close Umbrella: </TD>
+				   				<TD>	Z	</TD>
+				   			</TR>
+				   			<TR>
+				   				<TD>	Pause: </TD>
+				   				<TD>	P	</TD>
+				   			</TR>
+				 		</TABLE>
+					</TD>
+					<TD>
+						Art: <ul style="list-style: none;">
+							<li><a href="http://userpages.umbc.edu/~harste1/" > Steven Hart </a> - Project Lead</li>
+							<li><a href="http://kyleconway.webs.com/"> Kyle Conway</a> - Art Director</li>
+							<li>Rich Bussey - Sound</li> </ul>
+						Programming Team: <ul style="list-style: none;">
+							<li><a href="http://burdeynyportfolio.webs.com/" > Alisa Burdeyny </a>  - Programming Director</li>
+							<li><a href="http://slhuang.webs.com"> Shang-Ling Huang</a></li> 
+							<li><a href="http://userpages.umbc.edu/~tbrick1/">Tommy Brickwedde</a></li> 
+							<li><a href="http://sohisa1.freeserver.me">Isaac Sohn</a></li></ul>
+					</TD>
+				</TR>
+			</TABLE>
+			
+			</br>
+			</br>
+			 <h2>PRESS 'S' TO START!</h2></br>
+			<div id="gameplayer" class="content" style="width:960px; border:5px solid grey;">
+				<div id="unityPlayer">
+					<div class="missing">
+						<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
+							<img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
+						</a>
+					</div>
+					<div class="broken">
+						
+					</div>
+				</div>
+			</div>
+			
+				
+			
+			
+			
+			
+		</div>
+	</body>
+</html>
