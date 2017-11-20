@@ -89,8 +89,18 @@
           <div class="social_icons_wrapper">
             <ul id = "social-icon-button-list" class="social-icon-button-list">
               <li> 
-                <a href=https://www.facebook.com/katherine.marie.735>
-                  <img class="social-icon-button"  src="img/icons/facebook-icon.png">
+                <button id="btn" data-clipboard-text="steven.hart282@gmail.com">
+                  <img class="social-icon-button"  src="img/icons/email-icon.png">
+                </button>
+              </li>
+              <li> 
+                <a href=https://github.com/hartste90>
+                  <img class="social-icon-button"  src="img/icons/github-icon.png">
+                </a>
+              </li>
+              <li> 
+                <a href=http://steamcommunity.com/id/hartste90/>
+                  <img class="social-icon-button"  src="img/icons/steam-icon.png">
                 </a>
               </li>
             </ul>
@@ -139,7 +149,7 @@
         var clipboard = new Clipboard('button');
 
         clipboard.on('success', function(e) {
-          setTooltip(e.trigger, 'Copied to clipboard!');
+          setTooltip(e.trigger, 'steven.hart282@gmail.com copied to clipboard!');
           hideTooltip(e.trigger);
         });
 
