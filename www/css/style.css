@@ -18,7 +18,7 @@ body {
   position: relative;
   overflow: hidden;
   border-radius: 25px;
-  background-color: #bababa;  /*color1 0e7e3a */
+  background-color: #bbb;  /*color1 0e7e3a */
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -99,11 +99,8 @@ body {
 }
 
 .nav-button-list {
-  /*position: relative;*/
   margin: auto;
-  /*float: left;*/
   right: 10px;
-  /*bottom: 20%;*/
   display: flex;
 }
 
@@ -116,6 +113,10 @@ a.nav-button {
   font-weight: 400;
   font-style: normal;
   font-size: 15px;
+    /*background-color: #bbb;  /*color1 0e7e3a */*/
+  border-radius: 10px;
+  padding: 0px 0px;
+  color: #fff;
 }
 
 a.nav-button.active {
@@ -132,7 +133,6 @@ a.nav-button:hover {
 
 
 .header {
-    justify-content: center;
 
 }
 
@@ -221,9 +221,13 @@ hr.style1{
 .social-icon-button-list {
   /*position: absolute;*/
   /*float: left;*/
-  right: 10px;
-  top: 20%;
+
   display: flex;
+      position: relative;
+    /*display: inline-block;*/
+    margin: auto;
+    /*float: none;*/
+  } 
 }
 
 .footer-text {
@@ -435,18 +439,12 @@ section img {
     height: 40px;
   }
 
-  .social-icon-button-list {
-    position: relative;
-    /*display: inline-block;*/
-    margin: auto;
-    width: 40px;
-    /*float: none;*/
-  }
 
   .social-icon-button-list li {
     margin: 10px;
     position: relative;
     width: 20px;
+    border-radius: 20px;
   }
 
   .social-icon-button-list a {
