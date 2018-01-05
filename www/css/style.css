@@ -18,9 +18,9 @@ body {
   position: relative;
   overflow: hidden;
   border-radius: 25px;
-  background-color: #bbb;  /*color1 0e7e3a */
+  background-color: #fff;  /*color1 0e7e3a */
   border: none;
-  color: #FFFFFF;
+  color: #999;
   text-align: center;
   padding: 0px;
   width: 10px;
@@ -57,6 +57,7 @@ body {
   position: absolute;
   opacity: 0;
   top: 0;
+  color: #a9d;
   left: 150px;
   transition: 0.5s;
 }
@@ -79,7 +80,7 @@ body {
 .button:hover span {
   padding-right: 120px;
   left: 20px;
-  color: #fff;
+  color: #a9d;
 }
 
 .button:hover span:after {
