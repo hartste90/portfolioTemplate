@@ -13,16 +13,13 @@
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"/>
 
-    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
 
-    <script src="lib/ionic/js/ionic.bundle.js"></script>
     <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
 
-    <script src="js/app.js"></script>
   </head>
   <body ng-app="starter">
 
@@ -45,7 +42,7 @@
 
         <div style="width: 435px; background-color: none; height: auto; margin: auto;">
 
-          <div style="margin: 10px auto">
+          <div style="background-color: none;">
             <ul class="social-icon-button-list">
              <li> <button  class="button" id="email"><span id="email"><i class="fa fa-envelope"></i> </span></button></li>
               <li> <button class="button" id="linkedin"><span><i class="fa fa-linkedin"></i> </span></button> </li>
@@ -63,12 +60,14 @@
         <div style="width: 500px; padding: 5px 60px; background-color: #DDD; height: auto; margin: auto; border-radius: 20px;">
           <div class="nav-container">
             <ul id = "nav-button-list" class="nav-button-list">
-              <li> 
-                <a class="nav-button" href="about.html">about</a></li>
+              	<li> 
+		  				<a class="nav-button seventh before after" href="#">about</a>
+				</li>
+                <!-- <a class="nav-button" href="about.html">about</a></li> -->
                 <li> 
-                  <a class="nav-button" href="professionalprojects.html">professional</a></li>
+                  	<a class="nav-button seventh before after" href="professionalprojects.html">professional</a></li>
                 <li>  
-                  <a class="nav-button" href="personalprojects.html">personal</a></li>
+                  	<a class="nav-button seventh before after" href="personalprojects.html">personal</a></li>
             </ul>
           </div>
         </div>

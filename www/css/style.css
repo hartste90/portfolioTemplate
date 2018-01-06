@@ -13,6 +13,8 @@ body {
   display: none;
 }
 
+
+
 /*--------------------Buttons-------------------*/
 .button {
   position: relative;
@@ -22,9 +24,9 @@ body {
   border: none;
   color: #999;
   text-align: center;
-  padding: 0px;
-  width: 10px;
-  height: 10px;
+  padding:10px;
+  width: 40px;
+  height: 40px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
@@ -75,6 +77,7 @@ body {
 .button:hover {
   width: 150px;
   transition: .5s;
+  background-color: #ddd;
 }
 
 .button:hover span {
@@ -99,16 +102,65 @@ body {
   display: none;
 }
 
+/*---*/
+.wrapper{
+  margin:3em 0;
+}
+a,a:visited,a:hover,a:active{
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+  position:relative;
+  transition:0.5s color ease;
+  text-decoration:none;
+  color:#81b3d2;
+  font-size:2.5em;
+}
+a:hover{
+  color:#d73444;
+}
+a.before:before,a.after:after{
+  content: "";
+  transition:0.5s all ease;
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+  position:absolute;
+}
+a.before:before{
+  top:-0.25em;
+}
+a.after:after{
+  bottom:-0.25em;
+}
+a.before:before,a.after:after{
+  height:5px;
+  height:0.35rem;
+  width:0;
+  background:#d73444;
+}
+a.before:hover:before,a.after:hover:after{
+  width:100%;
+}
+
+a.seventh:before{
+  right:0;
+}
+a.seventh:after{
+  left:0;
+}
+/*---*/
+
 .nav-button-list {
   margin: auto;
   right: 10px;
   display: flex;
+    list-style: none;
+
 }
 
 a.nav-button {
   margin: 20px;
   text-decoration: none;
-  color: #aaa;
+  color: #000;
   text-transform: none;
   letter-spacing: .04em;
   font-weight: 400;
@@ -117,7 +169,6 @@ a.nav-button {
     /*background-color: #bbb;  /*color1 0e7e3a */*/
   border-radius: 10px;
   padding: 0px 0px;
-  color: #fff;
 }
 
 a.nav-button.active {
@@ -227,6 +278,8 @@ hr.style1{
       position: relative;
     /*display: inline-block;*/
     margin: auto;
+      list-style: none;
+
     /*float: none;*/
   } 
 }
