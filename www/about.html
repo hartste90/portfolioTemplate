@@ -1,47 +1,35 @@
 <!DOCTYPE html>
 <html>
-   <head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <link rel="icon" type="image/png" href="img/icons/favicon.png"/>    
-    <title>Steve Hart: about</title>
+    <title>Steve Hart</title>
+
     <link rel="manifest" href="manifest.json">
+    <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
 
-    <!-- un-comment this code to enable service worker
-    <script>
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('service-worker.js')
-          .then(() => console.log('service worker installed'))
-          .catch(err => console.log('Error', err));
-      }
-    </script>-->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"/>
 
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
-    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
-
-    -->
 
     <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
 
-    <!-- cordova script (this will be a 404 during development) -->
-    <script src="cordova.js"></script>
-
-    <!-- your app's js -->
   </head>
   <body ng-app="starter">
 
-      <div class="header">
 
+      <div class="header">
         <ul id="menu" class="mobile_only">
           <li> 
-              <a class="nav-button active" href="#">about</a></li>
+              <a class="nav-button" href="about.html">about</a></li>
             <li> 
               <a class="nav-button" href="professionalprojects.html">professional projects</a></li>
             <li>  
@@ -51,69 +39,83 @@
 
         <div id="logo" class="logo">
           <a href="index.html"> <img src="img/logo.png"></a>
-          <!-- <div class="logo-subtitle">creator. designer. engineer.</div> -->
-        </div>
-        <div class="nav-container">
-          <ul id = "nav-button-list" class="nav-button-list">
-            <li> 
-              <a class="nav-button active" href="#">about</a></li>
-            <li> 
-              <a class="nav-button" href="professionalprojects.html">professional projects</a></li>
-            <li>  
-              <a class="nav-button" href="personalprojects.html">personal projects</a></li>
-          </ul>
         </div>
 
-      </div>          
-
-      <div class="content">
-      <center>
-        <div class="about_wrapper">
-          <img class="about_photobox" src="img/photobox_1.jpg">
-          <div class="about_content">
-            <div class="about_subtitle">
-            about
+        <div style="width: 350px; background-color: none; height: auto; margin: auto;">
+            <div style="background-color: none;">
+              <ul class="social-icon-button-list">
+               <li> <button  class="button" id="email"><span id="email"><i class="far fa-envelope"></i></i> </span></button></li>
+                <li> <button class="button" id="linkedin"><span><i class="fab fa-linkedin"></i> </span></button> </li>
+                 <li>  <button class="button" id="github"><span><i class="fab fa-github"></i> </span></button></li>
+                 <li> <button  class="button" id="email"><span><i class="far fa-envelope"></i> </span></button></li>
+                <li> <button class="button" id="linkedin"><span><i class="fab fa-linkedin"></i> </span></button> </li>
+                 <li>  <button class="button" id="github"><span><i class="fab fa-github"></i> </span></button></li>
+                 <li> <button class="button" id="linkedin"><span><i class="fab fa-linkedin"></i> </span></button> </li>
+              </ul>
             </div>
-           <p>Kate Hart is a Boston born actor who has now relocated to Los Angeles permanently and is still trying to figure out how to not be able to walk everywhere she needs to go. She graduated from Emerson College in 2014 with a BFA in Acting, where she honed her skills of scene study, movement, dance, voice, stage combat and how to make it through classes and rehearsals on only Dunkin Donuts coffee and a power bar, While at Emerson she was able to study under many great professors well respected in the industry, act in 7 major productions, lead an a cappella group and direct her first student made films. </p>
-
-           <p>Upon graduating, Kate packed up her car and road tripped out to Los Angeles, where she has become a Company Member at Archway Theater, started an adult a cappella group and direct her first professional production. She loves staying busy and always having a new project in the works as she finishes her current one, which is obvious in her insane back to back productions of Twelfth Night, Hamlet and Oedipus/Antigone which took up her entire first 6 months in Los Angeles.</p>
-           
-           <p>She is passionate about wrestling her puppy, going on long runs and ending days with a glass of wine and her most reliable relationship, Netflix. She always has her trusty planner nearby as well as a Walking Dead notebook where she keeps all her ideas and notes as she walks around. She has tried being vegan to fit in in Los Angeles, but it didn't work (meat is delicious). The best advice she ever received came from a professor at Emerson, "find your tribe. make passionate art" And she strives to do just that.</p>
-
+          </div>
+        
+        <div >
+          <div class="nav-wrapper">
+            <div class="nav-container">
+              <a style="" class="nav-button seventh before after" href="about.html">about</a>
+              <a class="nav-button seventh before after" href="professionalprojects.html">professional</a>
+              <a class="nav-button seventh before after" href="personalprojects.html">personal</a>
+            </div>
           </div>
         </div>
+      </div>      
+
+      <div class="content">
+        <center>
+            <div class="expertise">
+              <h1>
+                What I Love:
+              </h1>
+              <h4 style="font-weight: bold">
+              </h4>
+              <div class="expertise-list" style="display:flex;">
+                <div class="expertise-list-item">
+                  <i class="fas fa-gamepad"></i>
+                  <h2 class="expertise-item-title"> Game Design </h2>
+                  <p style="padding: 5px;"> I call on knowledge and expertise in game design principles and trends to try and craft the best games out there.  I’ve got a background in engagement learning and I’m a gamer at heart, fascinated with the systems that make them so darn fun.
+                  </p>
+                </div>
+                <div class="expertise-list-item">
+                  <i class="fas fa-paper-plane"></i>
+                  <h2 class="expertise-item-title"> Project Development </h2>
+                  <p style="padding: 5px;"> Measure twice, code once.  Finding the true needs of a project and communicating those with rest of the team is the foundation for a successful game.  Nurturing strong systems of communication and organization enables a team to do better and produce their strongest work.
+                  </p>
+                </div>
+                 <div class="expertise-list-item">
+                  <i class="fas fa-code"></i>
+                  <h2 class="expertise-item-title"> Code </h2>
+                  <p style="padding: 5px;"> I develop games in and C# and Javascript specializing in the Unity Engine, but I’m comfortable jumping into unfamiliar territory and wrangling many other languages and libraries.  I get jazzed up for pure game development, but know the value of creating custom toolsets for projects as well.
+                  </p>
+                </div>
+              </div>
+            </div>
         </center>
       </div>
 
       <div class="footer">
-        <div class="footer_wrapper">
           
           <center class="mobile_only">
             <a href="#" id="back-to-top">Back to Top</a>
           </center>
           <div class="footer-text">
-              <a href="https://www.facebook.com/katherine.marie.735">facebook: katherine.marie.735</a>
-            <br>
-            <button id="btn" data-clipboard-text="katherine.marie.hart@gmail.com">
-              email: katherine.marie.hart @ gmail [dot] com </a>
-            </button>
+             Copyright &copy 
+            <script type="text/javascript">
+              var d = new Date()
+              document.write(d.getFullYear())
+            </script>
+            Steven Hart
           </div>
 
-          <div class="social_icons_wrapper">
-            <ul id = "social-icon-button-list" class="social-icon-button-list">
-              <li> 
-                <a href=https://www.facebook.com/katherine.marie.735>
-                  <img class="social-icon-button"  src="img/icons/facebook-icon.png">
-                </a>
-              </li>
-            </ul>
-          </div>
-          
 
-        </div>
       </div>
 
-    
+
       <script>
       if ($('#back-to-top').length) {
               var scrollTop = $(window).scrollTop();
