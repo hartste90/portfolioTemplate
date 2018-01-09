@@ -1,180 +1,208 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <link rel="icon" type="image/png" href="img/icons/favicon.png"/>    
-    <title>Steve Hart</title>
 
-    <link rel="manifest" href="manifest.json">
-    <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <link rel="icon" type="image/png" href="img/icons/favicon.png" />
+  <title>Steve Hart</title>
 
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"/>
-
-    <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
-
-  </head>
-  <body ng-app="starter">
+  <link rel="manifest" href="manifest.json">
+  <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
 
 
-      <div class="header">
-        <ul id="menu" class="mobile_only">
-          <li> 
-              <a class="nav-button" href="about.html">about</a></li>
-            <li> 
-              <a class="nav-button" href="professionalprojects.html">professional projects</a></li>
-            <li>  
-              <a class="nav-button" href="personalprojects.html">personal projects</a></li>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
+
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
+
+</head>
+
+<body ng-app="starter">
+
+
+  <div class="header">
+    <ul id="menu" class="mobile_only">
+      <li>
+        <a class="nav-button" href="about.html">about</a>
+      </li>
+      <li>
+        <a class="nav-button" href="professionalprojects.html">professional projects</a>
+      </li>
+      <li>
+        <a class="nav-button" href="personalprojects.html">personal projects</a>
+      </li>
+    </ul>
+
+
+    <div id="logo" class="logo">
+      <a href="index.html">
+        <img src="img/logo.png">
+      </a>
+    </div>
+
+    <div class="social-icons-wrapper">
+      <div>
+        <ul class="social-icon-button-list">
+          <li>
+            <button class="button first" id="email">
+              <i class="far fa-envelope"></i>
+              <span>Email</span>
+            </button>
+          </li>
+          <li>
+            <button class="button" id="linkedin">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </button>
+          </li>
+          <li>
+            <button class="button" id="github">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </button>
+            <li>
         </ul>
-
-
-        <div id="logo" class="logo">
-          <a href="index.html"> <img src="img/logo.png"></a>
-        </div>
-
-        <div style="width: 350px; background-color: none; height: auto; margin: auto;">
-            <div style="background-color: none;">
-              <ul class="social-icon-button-list">
-                <li> 
-                  <button  class="button" id="email">
-                    <i class="far fa-envelope"></i>
-                    <span>Email</span>
-                  </button>
-                </li>
-                <li> <button  class="button" id="email"><i class="far fa-envelope"></i><span>Email</span></button></li>
-                <li> <button class="button" id="linkedin"><i class="fab fa-linkedin"></i><span>LinkedIn</span></button></li> 
-                <li> <button  class="button" id="email"><i class="far fa-envelope"></i><span>Email</span></button></li>
-                <li> <button class="button" id="linkedin"><i class="fab fa-linkedin"></i><span>LinkedIn</span></button></li>
-                <li>  <button class="button" id="github"><i class="fab fa-github"></i><span>GitHub</span></button><li>
-                <li> <button class="button" id="linkedin"><i class="fab fa-linkedin"></i><span>LinkedIn</span></button></li>
-              </ul>
-            </div>
-          </div>
-        
-        <div >
-          <div class="nav-wrapper">
-            <div class="nav-container">
-              <a style="" class="nav-button seventh before after" href="about.html">about</a>
-              <a class="nav-button seventh before after" href="professionalprojects.html">professional</a>
-              <a class="nav-button seventh before after" href="personalprojects.html">personal</a>
-            </div>
-          </div>
-        </div>
-      </div>      
-
-      <div class="content">
-        <center>
-            <div class="expertise">
-              <h1>
-                What I Love:
-              </h1>
-              <h4 style="font-weight: bold">
-              </h4>
-              <div class="expertise-list" style="display:flex;">
-                <div class="expertise-list-item">
-                  <i class="fas fa-gamepad"></i>
-                  <h2 class="expertise-item-title"> Game Design </h2>
-                  <p style="padding: 5px;"> I call on knowledge and expertise in game design principles and trends to try and craft the best games out there.  I’ve got a background in engagement learning and I’m a gamer at heart, fascinated with the systems that make them so darn fun.
-                  </p>
-                </div>
-                <div class="expertise-list-item">
-                  <i class="fas fa-paper-plane"></i>
-                  <h2 class="expertise-item-title"> Project Development </h2>
-                  <p style="padding: 5px;"> Measure twice, code once.  Finding the true needs of a project and communicating those with rest of the team is the foundation for a successful game.  Nurturing strong systems of communication and organization enables a team to do better and produce their strongest work.
-                  </p>
-                </div>
-                 <div class="expertise-list-item">
-                  <i class="fas fa-code"></i>
-                  <h2 class="expertise-item-title"> Code </h2>
-                  <p style="padding: 5px;"> I develop games in and C# and Javascript specializing in the Unity Engine, but I’m comfortable jumping into unfamiliar territory and wrangling many other languages and libraries.  I get jazzed up for pure game development, but know the value of creating custom toolsets for projects as well.
-                  </p>
-                </div>
-              </div>
-            </div>
-        </center>
       </div>
+    </div>
 
-      <div class="footer">
-          
-          <center class="mobile_only">
-            <a href="#" id="back-to-top">Back to Top</a>
-          </center>
-          <div class="footer-text">
-             Copyright &copy 
-            <script type="text/javascript">
-              var d = new Date()
-              document.write(d.getFullYear())
-            </script>
-            Steven Hart
-          </div>
-
-
+    <div>
+      <div class="nav-wrapper">
+        <div class="nav-container">
+          <a style="" class="nav-button seventh before after" href="about.html">about</a>
+          <a class="nav-button seventh before after" href="professionalprojects.html">professional</a>
+          <a class="nav-button seventh before after" href="personalprojects.html">personal</a>
+        </div>
       </div>
+    </div>
+    <div class="box-shadow"></div>
+  </div>
+
+  <div class="content">
+    <center>
+      <div class="expertise">
+        <h1>
+          What I Love:
+        </h1>
+        <h4 style="font-weight: bold">
+        </h4>
+        <div class="expertise-list" style="display:flex;">
+          <div class="expertise-list-item">
+            <i class="fas fa-gamepad"></i>
+            <h2 class="expertise-item-title"> Game Design </h2>
+            <p style="padding: 5px;"> I call on knowledge and expertise in game design principles and trends to try and craft the best games out there.
+              I’ve got a background in engagement learning and I’m a gamer at heart, fascinated with the systems that make
+              them so darn fun.
+            </p>
+          </div>
+          <div class="expertise-list-item">
+            <i class="fas fa-paper-plane"></i>
+            <h2 class="expertise-item-title"> Project Development </h2>
+            <p style="padding: 5px;"> Measure twice, code once. Finding the true needs of a project and communicating those with rest of the team is
+              the foundation for a successful game. Nurturing strong systems of communication and organization enables a
+              team to do better and produce their strongest work.
+            </p>
+          </div>
+          <div class="expertise-list-item">
+            <i class="fas fa-code"></i>
+            <h2 class="expertise-item-title"> Code </h2>
+            <p style="padding: 5px;"> I develop games in and C# and Javascript specializing in the Unity Engine, but I’m comfortable jumping into unfamiliar
+              territory and wrangling many other languages and libraries. I get jazzed up for pure game development, but
+              know the value of creating custom toolsets for projects as well.
+            </p>
+          </div>
+        </div>
+      </div>
+    </center>
+  </div>
+
+  <div class="footer">
+
+    <center class="mobile_only">
+      <a href="#" id="back-to-top">Back to Top</a>
+    </center>
+    <div class="footer-text">
+      Copyright &copy
+      <script type="text/javascript">
+        var d = new Date()
+        document.write( d.getFullYear() )
+      </script> Steven Hart
+    </div>
 
 
-      <script>
-      if ($('#back-to-top').length) {
-              var scrollTop = $(window).scrollTop();
-         
-          $('#back-to-top').on('click', function (e) {
-              e.preventDefault();
-              $('html,body').animate({
-                  scrollTop: 0
-              }, 700);
-          });
-      }
-      </script>
+  </div>
 
-      <script>
 
-        // Tooltip
+  <script>
+    if ( $( '#back-to-top' ).length )
+    {
+      var scrollTop = $( window ).scrollTop();
 
-        $('button').tooltip({
-          trigger: 'click',
-          placement: 'top'
-        });
+      $( '#back-to-top' ).on( 'click', function ( e )
+      {
+        e.preventDefault();
+        $( 'html,body' ).animate( {
+          scrollTop: 0
+        }, 700 );
+      } );
+    }
+  </script>
 
-        function setTooltip(btn, message) {
-          $(btn).tooltip('hide')
-            .attr('data-original-title', message)
-            .tooltip('show');
-        }
+  <script>
 
-        function hideTooltip(btn) {
-          setTimeout(function() {
-            $(btn).tooltip('hide');
-          }, 1000);
-        }
+    // Tooltip
 
-        // Clipboard
+    $( 'button' ).tooltip( {
+      trigger: 'click',
+      placement: 'top'
+    } );
 
-        var clipboard = new Clipboard('button');
+    function setTooltip( btn, message )
+    {
+      $( btn ).tooltip( 'hide' )
+        .attr( 'data-original-title', message )
+        .tooltip( 'show' );
+    }
 
-        clipboard.on('success', function(e) {
-          setTooltip(e.trigger, 'steven.hart282@gmail.com copied to clipboard!');
-          hideTooltip(e.trigger);
-        });
+    function hideTooltip( btn )
+    {
+      setTimeout( function ()
+      {
+        $( btn ).tooltip( 'hide' );
+      }, 1000 );
+    }
 
-        clipboard.on('error', function(e) {
-          setTooltip(e.trigger, 'Failed!');
-          hideTooltip(e.trigger);
-        });
-        </script>
+    // Clipboard
 
-        <script>
-          $(function(){
-            $('#menu').slicknav();
-          });
-        </script>
+    var clipboard = new Clipboard( 'button' );
 
-  </body>
+    clipboard.on( 'success', function ( e )
+    {
+      setTooltip( e.trigger, 'steven.hart282@gmail.com copied to clipboard!' );
+      hideTooltip( e.trigger );
+    } );
+
+    clipboard.on( 'error', function ( e )
+    {
+      setTooltip( e.trigger, 'Failed!' );
+      hideTooltip( e.trigger );
+    } );
+  </script>
+
+  <script>
+    $( function ()    
+    {
+      $( '#menu' ).slicknav();
+    } );
+  </script>
+
+</body>
+
 </html>
