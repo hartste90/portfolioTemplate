@@ -39,9 +39,8 @@ a {
   position: relative;
   overflow: visible;
   border-radius: 25px;
-  background-color: #ddd;  /*color1 0e7e3a */
   border: none;
-  color: #999;
+  color: #aaa;
   text-align: center;
   padding:10px;
   width: 40px;
@@ -51,64 +50,27 @@ a {
   margin: 5px;
 }
 
-
-.button:after {
-    content: "";
-}
-
-.button:active:after {
-    padding: 0;
-    margin: 0;
-    opacity: .5;
-}
-
 .button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;  
-  font-size: 15px;
-  left: 0px;
-
-}
-
-.button span:after{
-  content: 'blank';
   position: absolute;
-  text-align: right;
+  transition: 0.5s;  
+  top: -2em;
+  font-size: 15px;
   opacity: 0;
-  bottom: 40px;
-  color: #a9d;
-  left: 0;
+  color: #229954;
   transition: 0.5s;
-}
-
-.button#email span:after {
-  content: 'email';
-}
-.button#linkedin span:after {
-  content: 'linkedin';
-}
-.button#github span:after {
-  content: 'github';
+  margin-left: -75%;
 }
 
 .button:hover {
-  /* width: 150px; */
-  transition: .5s;
+  transition: .3s;
   background-color: #ddd;
 }
 
 .button:hover span {
-  /* padding-right: 120px; */
-  /* left: 20px; */
-  color: #a9d;
+  top: -1.5em;
+  opacity: .8;
 }
 
-.button:hover span:after {
-  opacity: 1;
-  bottom: 20px;
-}
 
 /*--------------------Menu-------------------*/
 
