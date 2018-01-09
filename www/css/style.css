@@ -37,9 +37,9 @@ a {
 /*--------------------Buttons-------------------*/
 .button {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   border-radius: 25px;
-  background-color: #fff;  /*color1 0e7e3a */
+  background-color: #ddd;  /*color1 0e7e3a */
   border: none;
   color: #999;
   text-align: center;
@@ -67,7 +67,6 @@ a {
   display: inline-block;
   position: relative;
   transition: 0.5s;  
-  text-align: right;
   font-size: 15px;
   left: 0px;
 
@@ -76,10 +75,11 @@ a {
 .button span:after{
   content: 'blank';
   position: absolute;
+  text-align: right;
   opacity: 0;
-  top: 0;
+  bottom: 40px;
   color: #a9d;
-  left: 150px;
+  left: 0;
   transition: 0.5s;
 }
 
@@ -94,21 +94,20 @@ a {
 }
 
 .button:hover {
-  width: 150px;
+  /* width: 150px; */
   transition: .5s;
   background-color: #ddd;
 }
 
 .button:hover span {
-  padding-right: 120px;
-  left: 20px;
+  /* padding-right: 120px; */
+  /* left: 20px; */
   color: #a9d;
 }
 
 .button:hover span:after {
   opacity: 1;
-  text-align: right;
-  left: 40px;
+  bottom: 20px;
 }
 
 /*--------------------Menu-------------------*/
