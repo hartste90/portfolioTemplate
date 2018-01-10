@@ -41,6 +41,56 @@ p {
   text-align: center;
   padding: 2em; }
 
+#title-name::before {
+  content: "";
+  animation: writeName 2s linear forwards; }
+
+@keyframes writeName {
+  0% {
+    content: ""; }
+  5% {
+    content: "<"; }
+  10% {
+    content: "< "; }
+  15% {
+    content: "< st"; }
+  20% {
+    content: "< ste"; }
+  25% {
+    content: "< stev"; }
+  30% {
+    content: "< steve"; }
+  35% {
+    content: "< steve "; }
+  40% {
+    content: "< steve "; }
+  45% {
+    content: "< steve h"; }
+  50% {
+    content: "< steve ha"; }
+  70% {
+    content: "< steve har"; }
+  80% {
+    content: "< steve hart"; }
+  90% {
+    content: "< steve hart "; }
+  100% {
+    content: "< steve hart />"; }
+  to {
+    content: "< steve hart />"; } }
+.blink_me {
+  animation: blinker 2s linear 2;
+  margin-left: .2em; }
+
+@keyframes blinker {
+  0% {
+    opacity: 1; }
+  49% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
 .subtitle {
   font-family: 'Encode Sans Expanded', sans-serif;
   font-size: 15px;
@@ -84,7 +134,7 @@ li .first {
 .button span {
   position: absolute;
   transition: 0.5s;
-  top: -1.7em;
+  top: -2.2em;
   font-size: 15px;
   opacity: 0;
   color: #c3b299;
@@ -96,7 +146,7 @@ li .first {
   background-color: #815355; }
 
 .button:hover span {
-  top: -1.3em;
+  top: -1.7em;
   opacity: .6; }
 
 #email {
