@@ -16,6 +16,7 @@
   <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
 
   <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.css" />
@@ -28,7 +29,7 @@
 <body ng-app="starter">
 
 
-  <div class="header">
+  <div class="header shadow">
     <ul id="menu" class="mobile_only">
       <li>
         <a class="nav-button" href="about.html">about</a>
@@ -41,32 +42,35 @@
       </li>
     </ul>
 
-
-    <div id="logo" class="logo">
+    <div class="title">
       <a href="index.html">
-        <img src="img/logo.png">
+        &lt; steve hart /&gt;
+        <div class="subtitle">
+          designer | engineer
+        </div>
       </a>
+
     </div>
 
     <div class="social-icons-wrapper">
       <div>
         <ul class="social-icon-button-list">
           <li>
-            <button class="button first" id="email">
+            <button class="button first">
               <i class="far fa-envelope"></i>
-              <span>Email</span>
+              <span id="email">Email</span>
             </button>
           </li>
           <li>
-            <button class="button" id="linkedin">
+            <button class="button">
               <i class="fab fa-linkedin"></i>
-              <span>LinkedIn</span>
+              <span id="linkedin">LinkedIn</span>
             </button>
           </li>
           <li>
-            <button class="button" id="github">
+            <button class="button">
               <i class="fab fa-github"></i>
-              <span>GitHub</span>
+              <span id="github">GitHub</span>
             </button>
             <li>
         </ul>
@@ -82,14 +86,13 @@
         </div>
       </div>
     </div>
-    <div class="box-shadow"></div>
   </div>
 
   <div class="content">
     <center>
       <div class="expertise">
         <h1>
-          What I Love:
+          What I Do:
         </h1>
         <h4 style="font-weight: bold">
         </h4>
@@ -120,6 +123,39 @@
           </div>
         </div>
       </div>
+      <hr>
+      <div class="experience">
+        <h1>
+          Past Work:
+        </h1>
+        <h4 style="font-weight: bold">
+          </br>
+        </h4>
+        <div class="experience-list">
+          <div class="experience-list-item" style="border-left: solid #dddddd; ">
+            <a href="http://www.google.com">
+              <img src="img/icons/google-logo.jpg" alt="Google">
+            </a>
+          </div>
+          <div class="experience-list-item" style="border-left: solid #dddddd; ">
+            <a href="http://www.lumosity.com">
+              <img src="img/icons/lumosity-logo.png" alt="Lumosity">
+            </a>
+          </div>
+
+          <div class="experience-list-item" style="border-left: solid #dddddd; ">
+            <a href="http://www.aces-incorp.com">
+              <img src="img/icons/aces-logo.png" alt="A.C.E.S. Inc">
+            </a>
+          </div>
+          <div class="experience-list-item" style="border-left: solid #dddddd; border-right: solid #dddddd; ">
+            <a href="http://www.distrophonix.com">
+              <img src="img/icons/distrophonix-logo.jpg" alt="Distrophonix">
+            </a>
+          </div>
+        </div>
+      </div>
+      </br>
     </center>
   </div>
 
