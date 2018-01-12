@@ -92,7 +92,7 @@ p{
 }
 
 .blink_me {
-  animation: blinker 2s linear 2;
+  animation: blinker 2s linear infinite;
   margin-left: .2em;
 }
 
@@ -357,6 +357,10 @@ hr.style1{
   pointer-events: none;
 }
 
+.expertise{
+  min-width: 1118px;
+}
+
 .expertise i
 {
   font-size: 3em;
@@ -365,22 +369,30 @@ hr.style1{
 
 .expertise-item-title{
     color: $color4;
+    min-width: 345px;
     margin: 1em auto 1em;
 
 }
 
 .expertise-list-item{
-  width: 33.33%;
+  // width: 33.33%;
   /*border: 2px solid rgba(0,0,0,0.1);  */
-  border-radius: 10px;
-  margin: 5px 6em 5px;
+  // border-radius: 10px;
+  margin: 5px 1em 5px;
   padding-top: 3em;
   color: #777;
 
 }
 
+.expertise-description{
+  // background-color: #ddd;
+  min-width: 300px;
+  padding: 5px;
+}
+
 .experience{
-  width: 100%;
+  min-width: 1118px;
+
 }
 
 .experience-list{
