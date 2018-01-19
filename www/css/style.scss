@@ -24,7 +24,8 @@ body{
   height: 100%;
   width: 100%;
   margin-bottom: 100px;
-  min-width: 1024px;
+  min-width: 1118px;
+
 }
 
 h1, h2, h3, h4, h5, h6, body, span{
@@ -116,7 +117,7 @@ p{
   border-radius: 25px;
   border: none;
   background-color: $light-grey;
-  color: $color2;
+  color: $color5;
   text-align: center;
   padding:10px;
   width: 40px;
@@ -349,16 +350,14 @@ hr.style1{
 .content {
   padding-top: 10px;
   margin-top: 30px;
-  width: 96%;
-  /*margin-left: 2%;
-  margin-right: 2%;*/
   padding-left: 2%;
   padding-right: 2%;
   pointer-events: none;
 }
 
 .expertise{
-  min-width: 1118px;
+  margin-top: 6em;
+  margin-bottom: 6em;
 }
 
 .expertise i
@@ -369,13 +368,12 @@ hr.style1{
 
 .expertise-item-title{
     color: $color4;
-    min-width: 345px;
     margin: 1em auto 1em;
 
 }
 
 .expertise-list-item{
-  // width: 33.33%;
+  width: 33.33%;
   /*border: 2px solid rgba(0,0,0,0.1);  */
   // border-radius: 10px;
   margin: 5px 1em 5px;
@@ -386,12 +384,14 @@ hr.style1{
 
 .expertise-description{
   // background-color: #ddd;
-  min-width: 300px;
+  //min-width: 300px;
   padding: 5px;
 }
 
 .experience{
-  min-width: 1118px;
+  //min-width: 1118px;
+  margin-top: 6em;
+  margin-bottom: 6em;
 
 }
 
@@ -406,17 +406,28 @@ hr.style1{
   width: 80%;
 }
 
+.experience-list-item {
+  border-left: solid #ddd;
+  border-width: 1px;
+}
 
+#leftmost-child {
+  border-left:none;
+  border-width: 1px;
 
-// .experience-list-item{
-//   width: 20%;
-// }
+}
+
+.experience-list-item#rightmost-child {
+  border-right: none;//solid #ddd;
+  border-width: 1px;
+
+}
 
 /*--------------------Welcome Page-------------------*/
 
 .welcome-list {
   width: 96%;
-  min-width: 550px;
+  //min-width: 550px;
   margin-left: 2%;
   margin-right: 2%;
   display: flex;
@@ -426,7 +437,7 @@ hr.style1{
 
 .welcome-photo {
   position: relative;
-  min-width: 300px;
+  //min-width: 300px;
   width: 100%;
   height: auto;
 }
@@ -655,14 +666,14 @@ section img {
 
   .welcome-list {
     display: block;
-    min-width: 100%;
+    //min-width: 100%;
     margin: 0;
   }
 
   .welcome-photo {
     max-width: 2000px;
     max-height: 2000px;
-    min-width: 0px;
+    //min-width: 0px;
     width: 100%;
     height: auto;
   }
