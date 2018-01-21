@@ -29,7 +29,7 @@
 <body>
 
 
-  <div class="header shadow">
+  <div class="header">
     <ul id="menu" class="mobile_only">
       <li>
         <a class="nav-button" href="about.html">about</a>
@@ -41,7 +41,6 @@
         <a class="nav-button" href="personalprojects.html">personal projects</a>
       </li>
     </ul>
-
     <div class="title" alt="Go Home">
       <a id="title-name" href="index.html" style="display: flex; justify-content: center; margin: auto;">
 
@@ -52,42 +51,46 @@
         designer | engineer
       </div>
     </div>
+    <div class="shadow" style="padding-bottom: 2em; ">
 
-    <div class="social-icons-wrapper">
-      <div>
-        <ul class="social-icon-button-list">
-          <li>
-            <button class="button first">
-              <i class="far fa-envelope"></i>
-              <span id="email">Email</span>
-            </button>
-          </li>
-          <li>
-            <button class="button">
-              <i class="fab fa-linkedin"></i>
-              <span id="linkedin">LinkedIn</span>
-            </button>
-          </li>
-          <li>
-            <button class="button">
-              <i class="fab fa-github"></i>
-              <span id="github">GitHub</span>
-            </button>
+
+
+      <div class="social-icons-wrapper">
+        <div>
+          <ul class="social-icon-button-list">
             <li>
-        </ul>
+              <button class="button first">
+                <i class="far fa-envelope"></i>
+                <span id="email">Email</span>
+              </button>
+            </li>
+            <li>
+              <button class="button">
+                <i class="fab fa-linkedin"></i>
+                <span id="linkedin">LinkedIn</span>
+              </button>
+            </li>
+            <li>
+              <button class="button">
+                <i class="fab fa-github"></i>
+                <span id="github">GitHub</span>
+              </button>
+              <li>
+          </ul>
+        </div>
       </div>
-    </div>
-
-    <div>
-      <div class="nav-wrapper">
-        <div class="nav-container">
-          <a style="" class="nav-button seventh before after" href="about.html">about</a>
-          <a class="nav-button seventh before after" href="professionalprojects.html">professional</a>
-          <a class="nav-button seventh before after" href="personalprojects.html">personal</a>
+      <div>
+        <div class="nav-wrapper">
+          <div class="nav-container">
+            <a style="" class="nav-button seventh before after" href="about.html">about</a>
+            <a class="nav-button seventh before after" href="professionalprojects.html">professional</a>
+            <a class="nav-button seventh before after" href="personalprojects.html">personal</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
 
   <div class="content">
     <center>
@@ -108,7 +111,7 @@
           </div>
           <div class="expertise-list-item">
             <i class="fas fa-paper-plane"></i>
-            <h2 class="expertise-item-title"> Project Development </h2>
+            <h2 class="expertise-item-title" style="margin: .5em 0 .5em"> Project Development </h2>
             <p class="expertise-description"> Measure twice, code once. Finding the true needs of a project and communicating those with rest of the team is
               the foundation for a successful game. Nurturing strong systems of communication and organization enables a
               team to do better and produce their strongest work.
@@ -133,27 +136,38 @@
           </br>
         </h4>
         <div class="experience-list">
-          <div class="experience-list-item" id="leftmost-child">
-            <a href="http://www.google.com">
-              <img src="img/icons/google-logo.jpg" alt="Google">
-            </a>
-          </div>
-          <div class="experience-list-item">
-            <a href="http://www.lumosity.com">
-              <img src="img/icons/lumosity-logo.png" alt="Lumosity">
-            </a>
-          </div>
-
-          <div class="experience-list-item">
-            <a href=" http://www.aces-incorp.com ">
-              <img src="img/icons/aces-logo.png " alt="A.C.E.S. Inc ">
-            </a>
-          </div>
-          <div class="experience-list-item" id="rightmost-child">
-            <a href="http://www.distrophonix.com ">
-              <img src="img/icons/distrophonix-logo.jpg " alt="Distrophonix ">
-            </a>
-          </div>
+          <div class="spacer" style="width: 2.5%"></div>
+          <a href="http://www.google.com" class="experience-list-item">
+            <div>
+                <img src="img/icons/google-logo.jpg" alt="Google">
+            </div>
+          </a>
+           <div class="spacer" style="width: 3%"></div>
+           <a href="https://www.lumosity.com/" class="experience-list-item">
+            <div>
+                <img src="img/icons/lumosity-logo.png" alt="Lumosity">
+            </div>
+          </a>
+          <div class="spacer" style="width: 3%"></div>
+          <a href="https://www.playcrafting.com/" class="experience-list-item">
+            <div>
+                <img src="img/icons/playcrafting-logo.jpg " alt="Playcrafting ">
+            </div>
+          </a>
+        </div>
+        <div class="experience-list">
+          <div class="spacer" style="width: 15.5%"></div>
+          <a href="https://www.distrophonix.com/" class="experience-list-item">
+            <div>
+                <img src="img/icons/distrophonix-logo2.jpg " alt="Distrophonix">
+            </div>
+          </a>
+          <div class="spacer" style="width: 3%"></div>
+          <a href="http://acesinc.net/" class="experience-list-item">
+            <div>
+                <img src="img/icons/aces-logo.png " alt="A.C.E.S. Inc ">
+            </div>
+          </a>
         </div>
       </div>
       <hr>
@@ -168,7 +182,7 @@
           <div class="spacer" style="width: 15%"></div>
           <div class="education-list-item" id="leftmost-child">
               <div style="background-color: #aaa; margin: 0; border-radius: 1.5em 1.5em 0em 0em;">
-                <h3 style="color: #eee; font-size: 1.5em; margin: 0; padding: 1em  .5em 2em;">BACHELOR OF SCIENCE</h3>
+                <h3 style="color: #eee; font-size: 1.5em; margin: 0; padding: 2em  .5em 1em;">Bachelor of Science</h3>
               </div>
               <div style="margin: 0em;">
                 <h2>Computer Science</h2>
@@ -180,19 +194,19 @@
                 <h4>Game Development</h4>
               </div>
               <span class="fa-stack fa-4x">
-                <i class="fa fa-certificate fa-stack-2x" style="color: #666"></i>
+                <i id="certificate-image" class="fa fa-certificate fa-stack-2x" style="color: #666"></i>
                 <i class="fa fa-laptop fa-stack-1x" style="color: #ccc"></i>
               </span>
               <hr>
               <div style="opacity: .25; margin: 0 2em 1em;">
                             University of Maryland, </br>Baltimore County
-</br>2014
+              </br>2014
               </div>
           </div>
           <div class="spacer" style="width: 10%"></div>
           <div class="education-list-item" id="leftmost-child">
               <div style="background-color: #aaa; margin: 0; border-radius: 1.5em 1.5em 0em 0em;">
-                <h3 style="color: #eee; font-size: 1.5em; margin: 0; padding: 1em  .5em 2em;">BACHELOR OF ART</h3>
+                <h3 style="color: #eee; font-size: 1.5em; margin: 0; padding: 2em  .5em 1em;">Bachelor of Arts</h3>
               </div>
               <div style="margin: 0em;">
                 <h2>Visual Arts</h2>
@@ -210,12 +224,33 @@
               <hr>
               <div style="opacity: .25; margin: 0 2em 1em;">
                             University of Maryland, </br>Baltimore County
-</br>2014
+              </br>2014
               </div>
           </div>
           <div class="spacer" style="width: 15%"></div>
+        </div>
+      </div>
+      <hr>
+      <div class="education">
+        <h1>
+          Awards &amp Speaking
+        </h1>
+        <h4 style="font-weight: bold">
+          </br>
+        </h4>
+        <div style="margin: 2em 0em;">
+          </br>
+          <i class="fas fa-users"></i> Playcrafting Unity Bootcamp Instructor (2018 - Present)
+          </br></br>
+          <i class="fas fa-trophy"></i> Gameheads Game Development Mentor (2017 - Present)
+          </br></br>
+          <i class="fas fa-microphone"></i> Undergraduate Research &amp Development Speaker
+        </br>
+          <span style="color: #aaa"> Charisma as Gameplay (2013) </span>
+          </br></br>
 
 
+          
         </div>
       </div>
     </center>
