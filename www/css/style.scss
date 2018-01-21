@@ -411,15 +411,37 @@ hr.style1{
   border-width: 1px;
 }
 
-#leftmost-child {
+.experience-list-item#leftmost-child {
   border-left:none;
   border-width: 1px;
 
-}
+}  
 
 .experience-list-item#rightmost-child {
   border-right: none;//solid #ddd;
   border-width: 1px;
+
+}
+
+.education {
+  margin-top: 6em;
+  margin-bottom: 6em; }
+
+.education-list {
+  display: flex;
+  position: relative;
+  margin: auto;
+  padding-top: 3em; }
+
+.education img {
+  width: 80%; }
+
+.education-list-item {
+  border: solid #ddd;
+  border-width: 1px; }
+
+  .education-list-item#leftmost-child {
+  padding-right: 100px;
 
 }
 
