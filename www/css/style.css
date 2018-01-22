@@ -330,14 +330,16 @@ hr.style1 {
 .content {
   padding-top: 10px;
   margin-top: 30px;
-  padding-left: 2%;
-  padding-right: 2%;
+/*  padding-left: 2%;
+  padding-right: 2%;*/
   /*pointer-events: none;*/
 }
 
 .expertise{
-  margin-top: 6em;
-  margin-bottom: 6em;
+  padding-top: 6em;
+  padding-bottom: 6em;
+  background: linear-gradient(#fff, #eee);
+
 }
 
 .expertise-list {
@@ -373,10 +375,11 @@ hr.style1 {
 }
 
 .experience{
+  background: linear-gradient(#fff, #eee);
   min-width: 1118px;
-  margin-top: 6em;
-  margin-bottom: 6em;
-  padding: 0em 2em;
+  padding-top: 6em;
+  padding-bottom: 6em;
+  padding: inherit 2em;
 
 }
 
@@ -415,8 +418,9 @@ hr.style1 {
 }
 
 .education {
-  margin-top: 6em;
-  margin-bottom: 6em; }
+  background: linear-gradient(#fff, #eee);
+  padding-top: 6em;
+  padding-bottom: 6em; }
 
 .education-list {
   display: flex;
@@ -464,10 +468,25 @@ hr.style1 {
   padding: 10px 10px 10px 10px;
   display: flex;
   margin: auto;
-  background-color: #eee;
+  /*background-color: #eee;*/
   width: 100%;
   bottom: 0px;
-  height: 100px; }
+  height: 100px; 
+}
+
+
+.footer::after {
+  content: "";
+  background: url("../img/game-header-background.png");
+  background-size: 100% auto;
+  opacity: 0.25;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
 
 /*--------------------Welcome Page-------------------*/
 .social-icons-wrapper {
