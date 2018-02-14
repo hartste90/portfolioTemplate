@@ -60,11 +60,9 @@ hr{
   font-weight: bold;
   font-size: 20px;
   text-align: center;
-  padding: 5em; 
-
+  padding: 2em 5em 5em; 
   display: block;
   position: relative;
-  margin-bottom: 2em;
 
 }
 
@@ -82,7 +80,6 @@ hr{
 
 .title::after {
   content: "";
-  // background: url("../img/game-header-background.png");
   background-color: $color6;
   background-size: 100% auto;
   opacity: 1;
@@ -151,7 +148,7 @@ hr{
   overflow: visible;
   border-radius: 25px;
   border: none;
-  background-color: #eee;
+  background: none;
   color: #523249;
   text-align: center;
   padding: 10px;
@@ -191,8 +188,10 @@ li .first {
   margin-left: -75%; }
 
 .button:hover {
-  transition: .3s;
-  background-color:$color4; }
+  transition: .5s;
+  background-color:$color6; 
+  }
+
 
 .button:hover span {
   top: -1.7em;
@@ -546,15 +545,22 @@ hr.style1 {
 }
 
 /*--------------------Welcome Page-------------------*/
+.social-icons-background{
+padding-top: 3em;
+	width: 100%;
+  	background-color: $color6;
+}
+
 .social-icons-wrapper {
   width: 180px;
-  background-color: none;
-  height: auto;
+	background: none;  
+	height: auto;
   margin: auto; }
 
 .social-icon-button-list {
   display: flex;
   position: relative;
+  background: none;
   margin: auto;
   list-style: none; }
 
@@ -737,13 +743,19 @@ section img {
     margin: 10px;
     position: relative;
     width: 20px;
-    border-radius: 20px; }
+    border-radius: 20px; 
+    }
 
   .social-icon-button-list a {
     margin: auto; }
 
   .social-icon-button-list a img {
     margin: auto; }
+
+   #social-media-icon{
+   font-size: 2em;
+   padding: 0px;
+   }
 
   .slicknav_menu {
     display: block;
