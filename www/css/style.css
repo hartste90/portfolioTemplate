@@ -318,22 +318,20 @@ margin-bottom: 10px;*/
   height: 150px; }
 
 .content {
-  padding-top: 10px;
-  margin-top: 30px;
   /*  padding-left: 2%;
     padding-right: 2%;*/
   /*pointer-events: none;*/ }
 
-.expertise {
+.content-section {
   height: 600px;
-  padding-top: 6em;
-  padding-bottom: 6em;
+  min-width: 1118px;
+  padding: 6em 0;
   background: linear-gradient(#fff, rgba(212, 202, 209, 0.5)); }
 
 .expertise-list {
   width: 80%; }
 
-.expertise i {
+#expertise i {
   font-size: 3em;
   color: #523249; }
 
@@ -350,14 +348,6 @@ margin-bottom: 10px;*/
 
 .expertise-description {
   padding: 5px; }
-
-.experience {
-  height: 600px;
-  background: linear-gradient(#fff, rgba(212, 202, 209, 0.5));
-  min-width: 1118px;
-  padding-top: 6em;
-  padding-bottom: 6em;
-  padding: inherit 2em; }
 
 .experience-list {
   display: flex;
@@ -410,17 +400,10 @@ margin-bottom: 10px;*/
   font-size: 16px;
   padding: 16px 32px; }
 
-.education {
-  height: 600px;
-  background: linear-gradient(#fff, rgba(212, 202, 209, 0.5));
-  padding-top: 6em;
-  padding-bottom: 6em; }
-
 .education-list {
   display: flex;
   position: relative;
-  margin: auto;
-  padding-top: 3em; }
+  margin: auto; }
 
 #education-icon {
   color: #815355; }
@@ -432,10 +415,8 @@ margin-bottom: 10px;*/
 #education-spacer {
   width: 100px; }
 
-.talks {
-  background: linear-gradient(#fff, rgba(212, 202, 209, 0.5));
-  padding-top: 6em;
-  padding-bottom: 6em; }
+.talks-item-list {
+  padding-top: 3em; }
 
 .talks-item {
   font-size: 1.2em;
