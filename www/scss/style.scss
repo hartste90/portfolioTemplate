@@ -164,7 +164,7 @@ hr{
 ul {
   padding: 0px;
   display: table;
-  width: 100%;
+  /*width: 100%;*/
   list-style: none; }
 
 ul li {
@@ -281,6 +281,7 @@ a.nav-button {
   text-decoration: none;
   color: #6b6b6b;
   text-transform: none;
+  text-align: center;
   letter-spacing: .04em;
   font-style: normal;
   font-size: 15px; }
@@ -323,11 +324,44 @@ hr.style1 {
   width: 100%;
   display: flex; }
 
+.project-details
+{
+	display: block;
+
+}
+
 .project-image {
-  margin: 20px; }
+	width: 576px; 
+	height: 430px;
+  margin: 20px; 
+}
+
+.project-text-title{
+	text-align: left;
+}
+
+.project-text-list{
+	padding: 2em 0em;
+    display: flex;
+    list-style-type: circle;
+    flex-direction: column;
+}
+
+.project-text-list-item{
+	text-align: left;
+	padding: 1em 0em;
+}
+
+.project-image-list-item{
+	width: 160px;
+	height: 120px;
+	padding: 0px;
+	margin: 0em 1em;
+}
 
 .project-text {
-  margin: 20px; }
+	height: 70%;
+  padding: 20px; }
 
 /*--------------------Logo-------------------*/
 .logo {
@@ -345,8 +379,6 @@ hr.style1 {
 
 
 .content {
-  // padding-top: 10px;
-  // margin-top: 30px;
 /*  padding-left: 2%;
   padding-right: 2%;*/
   /*pointer-events: none;*/
@@ -485,6 +517,46 @@ hr.style1 {
   width: 100px;
 
 }
+
+.vertical-spacer-1x{
+	width: 100%;
+	height: 1em;
+}
+
+.vertical-spacer-2x{
+	width: 100%;
+	height: 2em;
+}
+
+.vertical-spacer-3x{
+	width: 100%;
+	height: 3em;
+}
+
+
+.vertical-spacer-4x{
+	width: 100%;
+	height: 4em;
+}
+
+.vertical-spacer-5x{
+	width: 100%;
+	height: 5em;
+}
+
+.vertical-spacer-6x{
+	width: 100%;
+	height: 6em;
+}
+
+.image_off, #home:hover .image_on{
+   display:none
+}
+.image_on, #home:hover .image_off{
+   display:block
+}
+
+
 .talks {
 }
 

@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <link rel="icon" type="image/png" href="img/icons/favicon.png"/>    
-    <title>Steve Hart</title>
 
-    <link rel="manifest" href="manifest.json">
-    <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <link rel="icon" type="image/png" href="img/icons/favicon.png" />
+  <title>Steve Hart</title>
+
+  <link rel="manifest" href="manifest.json">
+  <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
+
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
+  <script src="src/projectImageSwap.js"></script>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
 
-    <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
-
-  </head>
-  <body ng-app="starter">
+<body>
 
 
-        <div class="header">
+  <div class="header">
     <ul id="menu" class="mobile_only">
       <li>
         <a class="nav-button" href="about.html">about</a>
@@ -37,40 +42,24 @@
         <a class="nav-button" href="personalprojects.html">personal projects</a>
       </li>
     </ul>
-    <div class="title" alt="Go Home">
-      <a id="title-name" href="index.html" style="display: flex; justify-content: center; margin: auto;">
-
-        <div class="blink_me" style="width: .08em; height: 1.5em; background-color: #777;"></div>
-
-      </a>
-      <div class="subtitle">
-        designer | engineer
-      </div>
-
-
-
-    </div>
-    <div class="shadow" style="padding-bottom: 2em; ">
-
-
-
+    <div class="social-icons-background">
       <div class="social-icons-wrapper">
         <div>
           <ul class="social-icon-button-list">
             <li>
-              <button class="button first">
+              <button id="social-media-icon" class="button first">
                 <i class="far fa-envelope"></i>
                 <span id="email">Email</span>
               </button>
             </li>
             <li>
-              <button class="button">
+              <button id="social-media-icon" class="button">
                 <i class="fab fa-linkedin"></i>
                 <span id="linkedin">LinkedIn</span>
               </button>
             </li>
             <li>
-              <button class="button">
+              <button id="social-media-icon" class="button">
                 <i class="fab fa-github"></i>
                 <span id="github">GitHub</span>
               </button>
@@ -78,162 +67,293 @@
           </ul>
         </div>
       </div>
+    </div>
+    <div class="title" alt="Go Home">
+
+      <a id="title-name" href="index.html" style="display: flex; justify-content: center; margin: auto;">
+
+        <div class="blink_me" style="width: .08em; height: 1.5em; background-color: #777;"></div>
+
+      </a>
+      <div class="subtitle">
+        engineer
+      </div>
+
+
+
+    </div>
+    <div class="shadow">
+
+
+
+
       <div>
         <div class="nav-wrapper">
           <div class="nav-container">
-            <a style="" class="nav-button seventh before after" href="about.html">about</a>
-            <a class="nav-button seventh before after" href="professionalprojects.html">professional</a>
-            <a class="nav-button seventh before after" href="personalprojects.html">personal</a>
+            <a style="" class="nav-button seventh before after" href="about.html">about</br>me</a>
+            <a class="nav-button seventh before after" href="professionalprojects.html">professional</br>projects</a>
+            <a class="nav-button seventh before after" href="personalprojects.html">personal</br>projects</a>
           </div>
         </div>
       </div>
     </div>
-  </div> 
-       
+  </div>
+    
 
       <div class="content">
-        Professional Game Projects
-        <div class="project">
-          <img class="project-image" style="width: 576px; height: 430px;" src="img/portfolio/Lumosity/magicchance/magicchance_1.png" >
-          <div class="project-text">
-            <ul><strong>Magic Chance</strong>
-             </br> (2018)
-             <li>Spearheaded design and development of new brain area game.</li>
-             <li>Simultaneously programmed and launched web and mobile release versions.</li>
-            </ul>
+        <center>
+          <div class="vertical-spacer-6x">
           </div>
-        </div>
-        <hr />
+        <h1>
+          Professional Game Projects
+        </h1>
 
+      <div class="content-section">
         <div class="project">
-          <img class="project-image" style="width: 576px; height: 430px;" src="img/portfolio/Lumosity/continuum/continuum_1.png" >
-          <div class="project-text">
-            <ul><strong>Continuum</strong>
-            </br> (2017)
-             <li>Manipulated a 2D framework to simulate 3D rotation animations.</li>
-             <li>Developed a cross-platform JavaScript version of a Flash / ActionScript game.</li>
-             <li>Incorporated JS and the Cocos2D-x framework to simultaneously release to Android and iOS devices. </li>
-            </ul>
-          </div>
-        </div>    
-        <hr />
+          <img id="magicChanceMainImage" class="project-image" src="img/portfolio/Lumosity/magicchance/magicchance_1.png" >
+          <div class="project-details">
+            <div class="project-text">
+              <h2 class="project-text-title">Magic Chance</h2>
+              <div style="text-align: left;">(2018)</div>
+              <ul class="project-text-list">
+                 <li class="project-text-list-item">Spearheaded design and development of new brain area game.</li>
+                 <li class="project-text-list-item">Simultaneously programmed and launched web and mobile release versions.</li>
+                 <li class="project-text-list-item">Simultaneously programmed and launched web and mobile release versions.</li>
 
-        <div class="project">
-          <img class="project-image" style="width: 576px; height: 430px;" src="img/portfolio/Lumosity/lumosity_generic_laptop.jpg" >
-          <div class="project-text">
-            <ul><strong>Unannounced Project</strong>
-             </br> (2016)
-             <li>Designed multiplayer meta-experience.</li>
-             <li>User-experience development and research.</li>
+              </ul>
+            </div>
+            <ul class="project-image-list">
+            <li>
+              <img class="project-image-list-item" src="img/portfolio/Lumosity/magicchance/magicchance_1.png" onmouseover="onHover('magicChanceMainImage', 'img/portfolio/Lumosity/magicchance/magicchance_1.png');"/>
+            </li>
+            <li>
+              <img class="project-image-list-item" src="img/portfolio/Lumosity/magicchance/magicchance_2.png" onmouseover="onHover('magicChanceMainImage', 'img/portfolio/Lumosity/magicchance/magicchance_2.png');"/>
+            </li>
+            <li>
+              <img class="project-image-list-item" src="img/portfolio/Lumosity/magicchance/magicchance_3.png" onmouseover="onHover('magicChanceMainImage', 'img/portfolio/Lumosity/magicchance/magicchance_3.png');"/>
+            </li>
+            <li>
+              <img class="project-image-list-item" src="img/portfolio/Lumosity/magicchance/magicchance_4.png" onmouseover="onHover('magicChanceMainImage', 'img/portfolio/Lumosity/magicchance/magicchance_4.png');"/>
+            </li>
             </ul>
           </div>
-        </div>
-        <hr />
-
-        <div class="project">
-          <img class="project-image" style="width: 576px; height: 430px;" src="img/portfolio/Lumosity/starsearch_1.png" >
-          <div class="project-text">
-            <ul><strong>Star Search</strong>
-             </br> (2015)
-             <li>Drove adaptation of code from Flash to JavaScript.</li>
-             <li>Programmed code-based animations and particle effects.</li>
-             <li>Orchestrated individual object-based animations on a central callback timeline</li>
-            </ul>
-          </div>
-        </div>
-        <hr />
- 
-        <div class="project">
-          <img class="project-image" style="width: 576px; height: 430px;" src="img/portfolio/Lumosity/speedpack_1.png" >
-          <div class="project-text">
-            <ul><strong>Speed Pack</strong>
-            </br> (2014)
-             <li>Manipulated a 2D framework to simulate 3D rotation animations.</li>
-             <li>Developed a cross-platform JavaScript version of a Flash / ActionScript game.</li>
-             <li>Incorporated JS and the Cocos2D-x framework to simultaneously release to Android and iOS devices. </li>
-            </ul>
-          </div>
-        </div>
-        </div>
-      </div>
-
-      <div class="footer">
           
-          <center class="mobile_only">
-            <a href="#" id="back-to-top">Back to Top</a>
-          </center>
-          <div class="footer-text">
-             Copyright &copy 
-            <script type="text/javascript">
-              var d = new Date()
-              document.write(d.getFullYear())
-            </script>
-            Steven Hart
-          </div>
+              
 
-
+        </div>
       </div>
 
+      <div class="content-section">
+        <div class="project">
+          <img id="continuumMainImage" class="project-image" src="img/portfolio/Lumosity/continuum/continuum_1.png" >
+          <div class="project-details">
+            <div class="project-text">
+              <h2 class="project-text-title">Continuum</h2>
+              <div style="text-align: left;">(2017)</div>
+              <ul class="project-text-list">
+                  <li class="project-text-list-item">Manipulated a 2D framework to simulate 3D rotation animations.</li>
+                  <li class="project-text-list-item">Developed a cross-platform JavaScript version of a Flash / ActionScript game.</li>
+                  <li class="project-text-list-item">Incorporated JS and the Cocos2D-x framework to simultaneously release to Android and iOS devices. </li>
 
-      <script>
-      if ($('#back-to-top').length) {
-              var scrollTop = $(window).scrollTop();
-          $('#back-to-top').on('click', function (e) {
-              e.preventDefault();
-              $('html,body').animate({
-                  scrollTop: 0
-              }, 700);
-          });
-      }
-      </script>
+              </ul>
+            </div>
+            <ul class="project-image-list">
+            <li>
+              <img class="project-image-list-item" src="img/portfolio/Lumosity/continuum/continuum_1.png" onmouseover="onHover('continuumMainImage', 'img/portfolio/Lumosity/continuum/continuum_1.png');"/>
+            </li>
+            <li>
+              <img class="project-image-list-item" src="img/portfolio/Lumosity/continuum/continuum_2.png" onmouseover="onHover('continuumMainImage', 'img/portfolio/Lumosity/continuum/continuum_2.png');"/>
+            </li>
+            <li>
+              <img class="project-image-list-item" src="img/portfolio/Lumosity/continuum/continuum_3.png" onmouseover="onHover('continuumMainImage', 'img/portfolio/Lumosity/continuum/continuum_3.png');"/>
+            </li>
+            <li>
+              <img class="project-image-list-item" src="img/portfolio/Lumosity/continuum/continuum_4.png" onmouseover="onHover('continuumMainImage', 'img/portfolio/Lumosity/continuum/continuum_4.png');"/>
+            </li>
+            </ul>
+          </div>
+          
+              
 
-      <script>
+        </div>
+      </div>
 
-        // Tooltip
+            <div class="content-section">
+        <div class="project">
+          <img id="unannouncedProjectMainImage" class="project-image" src="img/portfolio/Lumosity/lumosity_generic_laptop.jpg" >
+          <div class="project-details">
+            <div class="project-text">
+              <h2 class="project-text-title">Unannounced Project</h2>
+              <div style="text-align: left;">(2016)</div>
+              <ul class="project-text-list">
+                <li class="project-text-list-item">Designed multiplayer meta-experience.</li>
+                <li class="project-text-list-item">User-experience development and research.</li>
+              </ul>
+            </div>
+            <ul class="project-image-list">
+            <li>
+              <img class="project-image-list-item" src="img/portfolio/Lumosity/lumosity_generic_laptop.jpg" onmouseover="onHover('unannouncedProjectMainImage', 'img/portfolio/Lumosity/lumosity_generic_laptop.jpg');"/>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-        $('button').tooltip({
-          trigger: 'click',
-          placement: 'top'
-        });
+      <div class="content-section">
+        <div class="project">
+          <img id="starSearchMainImage" class="project-image" src="img/portfolio/Lumosity/starsearch/starsearch_1.png" >
+          <div class="project-details">
+            <div class="project-text">
+              <h2 class="project-text-title">Star Search</h2>
+              <div style="text-align: left;">(2015)</div>
+              <ul class="project-text-list">
+                <li class="project-text-list-item">Drove adaptation of code from Flash to JavaScript.</li>
+                <li class="project-text-list-item">Programmed code-based animations and particle effects.</li>
+                <li class="project-text-list-item">Orchestrated individual object-based animations on a central callback timeline</li>
+              </ul>
+            </div>
+            <ul class="project-image-list">
+            <li>
+              <img class="project-image-list-item" src="img/portfolio/Lumosity/starsearch/starsearch_1.png" onmouseover="onHover('starSearchMainImage', 'img/portfolio/Lumosity/starsearch/starSearch_1.png');"/>
+            </li>
+            <li>
+              <img class="project-image-list-item" src="img/portfolio/Lumosity/starsearch/starsearch_2.png" onmouseover="onHover('starSearchMainImage', 'img/portfolio/Lumosity/starsearch/starSearch_2.png');"/>
+            </li>
+            <li>
+              <img class="project-image-list-item" src="img/portfolio/Lumosity/starsearch/starsearch_3.png" onmouseover="onHover('starSearchMainImage', 'img/portfolio/Lumosity/starsearch/starSearch_3.png');"/>
+            </li>
+            <li>
+              <img class="project-image-list-item" src="img/portfolio/Lumosity/starsearch/starsearch_4.png" onmouseover="onHover('starSearchMainImage', 'img/portfolio/Lumosity/starsearch/starSearch_4.png');"/>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-        function setTooltip(btn, message) {
-          $(btn).tooltip('hide')
-            .attr('data-original-title', message)
-            .tooltip('show');
-        }
+            <div class="content-section">
+        <div class="project">
+          <img id="speedPackMainImage" class="project-image" src="img/portfolio/Lumosity/speedpack/speedpack_1.png" >
+          <div class="project-details">
+            <div class="project-text">
+              <h2 class="project-text-title">Speed Pack</h2>
+              <div style="text-align: left;">(2014)</div>
+              <ul class="project-text-list">
+                <li class="project-text-list-item">Manipulated a 2D framework to simulate 3D rotation animations.</li>
+                <li class="project-text-list-item">Developed a cross-platform JavaScript version of a Flash / ActionScript game.</li>
+                <li class="project-text-list-item">Incorporated JS and the Cocos2D-x framework to simultaneously release to Android and iOS devices. </li>
+              </ul>
+            </div>
+            <ul class="project-image-list">
+            <li>
+              <img class="project-image-list-item" src="img/portfolio/Lumosity/speedpack/speedpack_1.png" onmouseover="onHover('speedPackMainImage', 'img/portfolio/Lumosity/speedpack/speedpack_1.png');"/>
+            </li>
+            <li>
+              <img class="project-image-list-item" src="img/portfolio/Lumosity/speedpack/speedpack_2.png" onmouseover="onHover('speedPackMainImage', 'img/portfolio/Lumosity/speedpack/speedpack_2.png');"/>
+            </li>
+            <li>
+              <img class="project-image-list-item" src="img/portfolio/Lumosity/speedpack/speedpack_3.png" onmouseover="onHover('speedPackMainImage', 'img/portfolio/Lumosity/speedpack/speedpack_3.png');"/>
+            </li>
+            <li>
+              <img class="project-image-list-item" src="img/portfolio/Lumosity/speedpack/speedpack_4.png" onmouseover="onHover('speedPackMainImage', 'img/portfolio/Lumosity/speedpack/speedpack_4.png');"/>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-        function hideTooltip(btn) {
-          setTimeout(function() {
-            $(btn).tooltip('hide');
-          }, 1000);
-        }
+       
+        </div>
+      </div>
+      </center>
+      </div>
 
-        // Clipboard
+  <div class="footer ">
 
-        var clipboard = new Clipboard('button');
+    <center class="mobile_only ">
+      <a href="# " id="back-to-top ">Back to Top</a>
+    </center>
+    <div class="footer-text ">
+      Copyright &copy
+      <script type="text/javascript ">
+        var d = new Date()
+        document.write( d.getFullYear() )
+      </script> handcrafted by Steve Hart
+    </div>
 
-        clipboard.on('success', function(e) {
-          setTooltip(e.trigger, 'steven.hart282@gmail.com copied to clipboard!');
-          hideTooltip(e.trigger);
-        });
 
-        clipboard.on('error', function(e) {
-          setTooltip(e.trigger, 'Failed!');
-          hideTooltip(e.trigger);
-        });
-        </script>
+  </div>
 
-        <script>
-          $(function(){
-            $('#menu').slicknav();
-          });
-        </script>
 
-  </body>
+  <script>
+    if ( $( '#back-to-top' ).length )
+    {
+      var scrollTop = $( window ).scrollTop();
+
+      $( '#back-to-top' ).on( 'click', function ( e )
+      {
+        e.preventDefault();
+        $( 'html,body' ).animate( {
+          scrollTop: 0
+        }, 700 );
+      } );
+    }
+  </script>
+
+  <script>
+
+    // Tooltip
+
+    $( 'button' ).tooltip( {
+      trigger: 'click',
+      placement: 'top'
+    } );
+
+    function setTooltip( btn, message )
+    {
+      $( btn ).tooltip( 'hide' )
+        .attr( 'data-original-title', message )
+        .tooltip( 'show' );
+    }
+
+    function hideTooltip( btn )
+    {
+      setTimeout( function ()
+      {
+        $( btn ).tooltip( 'hide' );
+      }, 1000 );
+    }
+
+    // Clipboard
+
+    var clipboard = new Clipboard( 'button' );
+
+    clipboard.on( 'success', function ( e )
+    {
+      setTooltip( e.trigger, 'steven.hart282@gmail.com copied to clipboard!' );
+      hideTooltip( e.trigger );
+    } );
+
+    clipboard.on( 'error', function ( e )
+    {
+      setTooltip( e.trigger, 'Failed!' );
+      hideTooltip( e.trigger );
+    } );
+  </script>
+
+  <script>
+    $( function ()    
+    {
+      $( '#menu' ).slicknav();
+    } );
+  </script>
+
+  <script>
+    function changeText( text )
+    {
+      document.getElementById( "experience-details-box " ).innerHTML = text;
+    }
+  </script>
+
+</body>
+
 </html>
-
-
-
-
-
-      

@@ -10,7 +10,6 @@
   <link rel="manifest" href="manifest.json">
   <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
 
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
   <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
@@ -23,10 +22,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
+  <script src="src/projectImageSwap.js"></script>
+
 
 </head>
 
-<body ng-app="starter">
+<body>
 
 
   <div class="header">
@@ -41,40 +42,24 @@
         <a class="nav-button" href="personalprojects.html">personal projects</a>
       </li>
     </ul>
-    <div class="title" alt="Go Home">
-      <a id="title-name" href="index.html" style="display: flex; justify-content: center; margin: auto;">
-
-        <div class="blink_me" style="width: .08em; height: 1.5em; background-color: #777;"></div>
-
-      </a>
-      <div class="subtitle">
-        designer | engineer
-      </div>
-
-
-
-    </div>
-    <div class="shadow" style="padding-bottom: 2em; ">
-
-
-
+    <div class="social-icons-background">
       <div class="social-icons-wrapper">
         <div>
           <ul class="social-icon-button-list">
             <li>
-              <button class="button first">
+              <button id="social-media-icon" class="button first">
                 <i class="far fa-envelope"></i>
                 <span id="email">Email</span>
               </button>
             </li>
             <li>
-              <button class="button">
+              <button id="social-media-icon" class="button">
                 <i class="fab fa-linkedin"></i>
                 <span id="linkedin">LinkedIn</span>
               </button>
             </li>
             <li>
-              <button class="button">
+              <button id="social-media-icon" class="button">
                 <i class="fab fa-github"></i>
                 <span id="github">GitHub</span>
               </button>
@@ -82,18 +67,38 @@
           </ul>
         </div>
       </div>
+    </div>
+    <div class="title" alt="Go Home">
+
+      <a id="title-name" href="index.html" style="display: flex; justify-content: center; margin: auto;">
+
+        <div class="blink_me" style="width: .08em; height: 1.5em; background-color: #777;"></div>
+
+      </a>
+      <div class="subtitle">
+        engineer
+      </div>
+
+
+
+    </div>
+    <div class="shadow">
+
+
+
+
       <div>
         <div class="nav-wrapper">
           <div class="nav-container">
-            <a style="" class="nav-button seventh before after" href="about.html">about</a>
-            <a class="nav-button seventh before after" href="professionalprojects.html">professional</a>
-            <a class="nav-button seventh before after" href="personalprojects.html">personal</a>
+            <a style="" class="nav-button seventh before after" href="about.html">about</br>me</a>
+            <a class="nav-button seventh before after" href="professionalprojects.html">professional</br>projects</a>
+            <a class="nav-button seventh before after" href="personalprojects.html">personal</br>projects</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-
+    
   <div class="content">
     <center>
       <ul class="welcome-list">
