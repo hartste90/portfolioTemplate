@@ -57,12 +57,11 @@ ol {
 
 .header {
   display: block;
-  position: relative;
-  /*padding-bottom: 2em;*/ }
+  position: relative; }
 
 .title::after {
   content: "";
-  background-color: rgba(212, 202, 209, 0.5);
+  background-color: rgba(212, 202, 209, 0.3);
   background-size: 100% auto;
   opacity: 1;
   top: 0;
@@ -76,35 +75,35 @@ ol {
   0% {
     content: ""; }
   5% {
-    content: "<"; }
+    content: " "; }
   10% {
-    content: "< "; }
+    content: "  "; }
   15% {
-    content: "< st"; }
+    content: "  st"; }
   20% {
-    content: "< ste"; }
+    content: "  ste"; }
   25% {
-    content: "< stev"; }
+    content: "  stev"; }
   30% {
-    content: "< steve"; }
+    content: "  steve"; }
   35% {
-    content: "< steve "; }
+    content: "  steve "; }
   40% {
-    content: "< steve "; }
+    content: "  steve "; }
   45% {
-    content: "< steve h"; }
+    content: "  steve h"; }
   50% {
-    content: "< steve ha"; }
+    content: "  steve ha"; }
   70% {
-    content: "< steve har"; }
+    content: "  steve har"; }
   80% {
-    content: "< steve hart"; }
+    content: "  steve hart"; }
   90% {
-    content: "< steve hart "; }
+    content: "  steve hart "; }
   100% {
-    content: "< steve hart />"; }
+    content: "  steve hart    "; }
   to {
-    content: "< steve hart />"; } }
+    content: "  steve hart    "; } }
 .blink_me {
   animation: blinker 2s linear infinite;
   margin-left: .2em; }
@@ -170,7 +169,7 @@ li .first {
 
 .button:hover {
   transition: .5s;
-  background-color: rgba(212, 202, 209, 0.5); }
+  background-color: rgba(212, 202, 209, 0.3); }
 
 .button:hover span {
   top: -1.7em;
@@ -275,7 +274,7 @@ a.nav-button:hover {
 
 /*--------------------Header-------------------*/
 .shadow {
-  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 1px 3px 5px 6px #ccc;
   /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
   -moz-box-shadow: 3px 3px 5px 6px #ccc;
   /* Firefox 3.5 - 3.6 */
@@ -347,15 +346,19 @@ margin-bottom: 10px;*/
   height: 150px; }
 
 .content {
-  /*  padding-left: 2%;
-    padding-right: 2%;*/
-  /*pointer-events: none;*/ }
+  background-image: url("../img/circles-transparent.png");
+  background-repeat: repeat;
+  padding-bottom: 6em; }
 
 .content-section {
   height: 600px;
   min-width: 1118px;
-  padding: 6em 0;
-  background: linear-gradient(#fff, rgba(212, 202, 209, 0.5)); }
+  padding: 6em 0; }
+
+.content-card {
+  padding-top: 1em;
+  height: 500px;
+  width: 90%; }
 
 .expertise-list {
   width: 80%; }
@@ -383,7 +386,7 @@ margin-bottom: 10px;*/
   position: relative;
   margin: auto;
   width: 80%;
-  padding-top: 3em; }
+  padding-top: 6em; }
 
 .experience-list-item {
   width: 17%;
@@ -521,7 +524,7 @@ margin-bottom: 10px;*/
 .social-icons-background {
   padding-top: 3em;
   width: 100%;
-  background-color: rgba(212, 202, 209, 0.5); }
+  background-color: rgba(212, 202, 209, 0.3); }
 
 .social-icons-wrapper {
   width: 180px;

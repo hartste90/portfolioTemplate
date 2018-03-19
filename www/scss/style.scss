@@ -6,7 +6,8 @@ $color2: rgba(187, 222, 240, 1);
 $color3: rgba(195, 178, 153, 1);
 $color4: rgba(129, 83, 85, 1);
 $color5: rgba(82, 50, 73, 1);
-$color6: rgba(212, 202, 209, .5);
+$color6: rgba(212, 202, 209, .3);
+$color7: rgba(212, 202, 209, .1);
 
  
 $dark-grey: #333;
@@ -79,8 +80,6 @@ ol{
 .header {
   display: block;
   position: relative;
-  /*padding-bottom: 2em;*/
-
 }
 
 .title::after {
@@ -100,35 +99,35 @@ ol{
   0% {
     content: ""; }
   5% {
-    content: "<"; }
+    content: " "; }
   10% {
-    content: "< "; }
+    content: "  "; }
   15% {
-    content: "< st"; }
+    content: "  st"; }
   20% {
-    content: "< ste"; }
+    content: "  ste"; }
   25% {
-    content: "< stev"; }
+    content: "  stev"; }
   30% {
-    content: "< steve"; }
+    content: "  steve"; }
   35% {
-    content: "< steve "; }
+    content: "  steve "; }
   40% {
-    content: "< steve "; }
+    content: "  steve "; }
   45% {
-    content: "< steve h"; }
+    content: "  steve h"; }
   50% {
-    content: "< steve ha"; }
+    content: "  steve ha"; }
   70% {
-    content: "< steve har"; }
+    content: "  steve har"; }
   80% {
-    content: "< steve hart"; }
+    content: "  steve hart"; }
   90% {
-    content: "< steve hart "; }
+    content: "  steve hart "; }
   100% {
-    content: "< steve hart />"; }
+    content: "  steve hart    "; }
   to {
-    content: "< steve hart />"; } }
+    content: "  steve hart    "; } }
 .blink_me {
   animation: blinker 2s linear infinite;
   margin-left: .2em; }
@@ -301,7 +300,7 @@ a.nav-button:hover {
 
 /*--------------------Header-------------------*/
 .shadow {
-  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 1px 3px 5px 6px #ccc;
   /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
   -moz-box-shadow: 3px 3px 5px 6px #ccc;
   /* Firefox 3.5 - 3.6 */
@@ -384,16 +383,25 @@ hr.style1 {
 
 
 .content {
-/*  padding-left: 2%;
-  padding-right: 2%;*/
-  /*pointer-events: none;*/
+  background-image: url("../img/circles-transparent.png");
+  background-repeat: repeat;
+  padding-bottom: 6em;
 }
 
 .content-section {
   height: 600px;
+  // width: 90%;
   min-width: 1118px;
   padding: 6em 0; 
-  background: linear-gradient(#fff,$color6);
+  // background: linear-gradient(#fff,$color6);
+}
+
+.content-card{
+  padding-top: 1em;
+    // background-color: $color6;
+height: 500px;
+  // background: #fff;
+width: 90%;
 }
 
 .expertise{
@@ -440,7 +448,7 @@ hr.style1 {
   position: relative;
   margin: auto;
   width: 80%;
-  padding-top: 3em;
+  padding-top: 6em;
 }
 
 .experience-list-item {
@@ -616,7 +624,8 @@ hr.style1 {
 /*--------------------Welcome Page-------------------*/
 .social-icons-background{
 padding-top: 3em;
-	width: 100%;
+  width: 100%;
+  // opacity: .25;
   	background-color: $color6;
 }
 
