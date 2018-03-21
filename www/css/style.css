@@ -24,9 +24,7 @@ h2 {
   margin-top: 10px; }
 
 a {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  /* font-family: Source Code Pro, sans-serif; */ }
+  font-family: 'Montserrat', sans-serif; }
 
 p {
   font-family: 'Montserrat', sans-serif; }
@@ -44,15 +42,29 @@ ol {
 
 .title {
   font-family: 'Encode Sans Expanded', sans-serif;
-  font-weight: bold;
   font-size: 20px;
   text-align: center;
   padding: 2em 5em 5em;
   display: block;
   position: relative; }
 
-#title-name::before {
-  content: "";
+.title-name {
+  display: flex;
+  justify-content: center;
+  margin: auto; }
+
+.title-name::before {
+  content: "  steve hart    ";
+  color: #cbd4c2;
+  font-size: 2.5em;
+  margin: 0px;
+  transition: all .5s; }
+
+.title-name:hover:before {
+  transition: all .5s;
+  color: #fff; }
+
+.title-name#animated::before {
   animation: writeName 2s linear forwards; }
 
 .header {
@@ -61,9 +73,8 @@ ol {
 
 .title::after {
   content: "";
-  background-color: rgba(212, 202, 209, 0.3);
+  background-color: #523249;
   background-size: 100% auto;
-  opacity: 1;
   top: 0;
   left: 0;
   bottom: 0;
@@ -73,11 +84,11 @@ ol {
 
 @keyframes writeName {
   0% {
-    content: ""; }
+    content: "  steve hart    "; }
   5% {
-    content: " "; }
+    content: "  s"; }
   10% {
-    content: "  "; }
+    content: "  s"; }
   15% {
     content: "  st"; }
   20% {
@@ -106,7 +117,10 @@ ol {
     content: "  steve hart    "; } }
 .blink_me {
   animation: blinker 2s linear infinite;
-  margin-left: .2em; }
+  margin-left: .2em;
+  width: .08em;
+  background-color: #cbd4c2;
+  font-size: 2.5em; }
 
 @keyframes blinker {
   0% {
@@ -120,7 +134,8 @@ ol {
 .subtitle {
   font-family: 'Encode Sans Expanded', sans-serif;
   font-size: 15px;
-  text-align: center; }
+  text-align: center;
+  color: #cbd4c2; }
 
 /*--------------------Buttons-------------------*/
 .button {
@@ -129,7 +144,7 @@ ol {
   border-radius: 25px;
   border: none;
   background: none;
-  color: #523249;
+  color: #cbd4c2;
   text-align: center;
   padding: 10px;
   width: 40px;
@@ -163,7 +178,7 @@ li .first {
   top: -2.2em;
   font-size: 15px;
   opacity: 0;
-  color: #523249;
+  color: #cbd4c2;
   transition: 0.5s;
   margin-left: -75%; }
 
@@ -173,7 +188,7 @@ li .first {
 
 .button:hover span {
   top: -1.7em;
-  opacity: .6; }
+  opacity: 1; }
 
 #email {
   margin-left: -1.7em; }
@@ -201,8 +216,7 @@ a, a:visited, a:hover, a:active {
   position: relative;
   transition: 0.5s color ease;
   text-decoration: none;
-  color: #523249;
-  font-size: 2.5em; }
+  color: #523249; }
 
 a:hover {
   color: #815355; }
@@ -332,12 +346,7 @@ hr.style1 {
 
 /*--------------------Logo-------------------*/
 .logo {
-  /*  position: relative;
-  */
   margin: auto;
-               /*
-margin-left: 20px;
-margin-bottom: 10px;*/
   width: 300px;
   height: 150px; }
 
@@ -346,9 +355,8 @@ margin-bottom: 10px;*/
   height: 150px; }
 
 .content {
-  background-image: url("../img/circles-transparent.png");
-  background-repeat: repeat;
-  padding-bottom: 6em; }
+  background-image: url("../img/circles-dark-2.jpg");
+  background-repeat: repeat; }
 
 .content-section {
   height: 600px;
@@ -360,6 +368,49 @@ margin-bottom: 10px;*/
   height: 500px;
   width: 90%; }
 
+.content-card {
+  position: relative;
+  width: 95%;
+  padding: 1em 1.5em;
+  margin: 2em auto;
+  background-color: #815355;
+  background: #cbd4c2;
+  overflow: hidden; }
+
+.content-card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-width: 0 140px 140px 0;
+  /* This trick side-steps a webkit bug */
+  border-style: solid;
+  border-color: #523249 #523249 #cbd4c2 #cbd4c2;
+  /* A bit more verbose to work with .rounded too */
+  background: transparent;
+  /* For when also applying a border-radius */
+  display: block;
+  width: 0;
+  /* Only for Firefox 3.0 damage limitation */
+  /* Optional: shadow */
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), -1px 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), -1px 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), -1px 1px 1px rgba(0, 0, 0, 0.2); }
+
+.content-card.rounded {
+  -webkit-border-radius: 5px 0 5px 5px;
+  -moz-border-radius: 5px 0 5px 5px;
+  border-radius: 5px 0 5px 5px; }
+
+.content-card.rounded:before {
+  border-width: 28px;
+  /* Triggers a 1px 'step' along the diagonal in Safari 5 (and Chrome 10) */
+  border-color: #523249 #523249 #cbd4c2 #cbd4c2;
+  /* A bit more verbose to work with .rounded too */
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius: 0 0 0 5px;
+  border-radius: 0 0 0 5px; }
+
 .expertise-list {
   width: 80%; }
 
@@ -368,7 +419,7 @@ margin-bottom: 10px;*/
   color: #523249; }
 
 .expertise-item-title {
-  color: #815355;
+  color: #523249;
   margin: 1em auto 1em; }
 
 .expertise-list-item {
@@ -490,7 +541,6 @@ margin-bottom: 10px;*/
   margin-left: 2%;
   margin-right: 2%;
   display: flex;
-  float: left;
   list-style: none; }
 
 .welcome-photo {
@@ -508,11 +558,17 @@ margin-bottom: 10px;*/
   bottom: 0px;
   height: 200px; }
 
+.footer-link-list {
+  display: block; }
+
+.footer-link-item {
+  display: block;
+  font-size: 1em; }
+
 .footer::after {
   content: "";
   background-color: #523249;
   background-size: 100% auto;
-  opacity: 0.25;
   top: 0;
   left: 0;
   bottom: 0;
@@ -524,7 +580,7 @@ margin-bottom: 10px;*/
 .social-icons-background {
   padding-top: 3em;
   width: 100%;
-  background-color: rgba(212, 202, 209, 0.3); }
+  background-color: #523249; }
 
 .social-icons-wrapper {
   width: 180px;

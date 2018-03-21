@@ -20,7 +20,8 @@ html {
   position: relative;
   overflow-y: scroll;
   min-height: 100%;
-  width: 100%; }
+  width: 100%; 
+}
 
 body {
   height: 100%;
@@ -41,8 +42,12 @@ h2 {
 
 a {
   font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  /* font-family: Source Code Pro, sans-serif; */ }
+}
+
+a{
+  // font-weight: bold;
+}
+
 
 p {
   font-family: 'Montserrat', sans-serif; }
@@ -63,7 +68,7 @@ ol{
 
 .title {
   font-family: 'Encode Sans Expanded', sans-serif;
-  font-weight: bold;
+  // font-weight: bold;
   font-size: 20px;
   text-align: center;
   padding: 2em 5em 5em; 
@@ -72,10 +77,31 @@ ol{
 
 }
 
-#title-name::before {
-  content: "";
-  animation: writeName 2s linear forwards; }
+.title-name{
+  display: flex; 
+  justify-content: center; 
+  margin: auto;
+}
 
+
+.title-name::before {
+  content: "  steve hart    "; 
+  color: $color1;
+  font-size: 2.5em;
+  margin: 0px;
+  transition: all .5s;
+
+}
+
+.title-name:hover:before{
+  transition: all .5s;
+  color: #fff;
+}
+
+.title-name#animated::before
+{
+  animation: writeName 2s linear forwards; 
+}
 
 .header {
   display: block;
@@ -84,9 +110,8 @@ ol{
 
 .title::after {
   content: "";
-  background-color: $color6;
+  background-color: $color5;
   background-size: 100% auto;
-  opacity: 1;
   top: 0;
   left: 0;
   bottom: 0;
@@ -97,11 +122,11 @@ ol{
 
 @keyframes writeName {
   0% {
-    content: ""; }
+    content: "  steve hart    "; } 
   5% {
-    content: " "; }
+    content: "  s"; }
   10% {
-    content: "  "; }
+    content: "  s"; }
   15% {
     content: "  st"; }
   20% {
@@ -128,9 +153,14 @@ ol{
     content: "  steve hart    "; }
   to {
     content: "  steve hart    "; } }
-.blink_me {
+
+  .blink_me {
   animation: blinker 2s linear infinite;
-  margin-left: .2em; }
+  margin-left: .2em; 
+  width: .08em; 
+  background-color: $color1;
+  font-size: 2.5em;
+}
 
 @keyframes blinker {
   0% {
@@ -144,7 +174,9 @@ ol{
 .subtitle {
   font-family: 'Encode Sans Expanded', sans-serif;
   font-size: 15px;
-  text-align: center; }
+  text-align: center;
+  color: $color1;
+}
 
 /*--------------------Buttons-------------------*/
 .button {
@@ -153,7 +185,7 @@ ol{
   border-radius: 25px;
   border: none;
   background: none;
-  color: #523249;
+  color: $color1;
   text-align: center;
   padding: 10px;
   width: 40px;
@@ -187,7 +219,7 @@ li .first {
   top: -2.2em;
   font-size: 15px;
   opacity: 0;
-  color: $color5;
+  color: $color1;
   transition: 0.5s;
   margin-left: -75%; }
 
@@ -199,7 +231,7 @@ li .first {
 
 .button:hover span {
   top: -1.7em;
-  opacity: .6; }
+  opacity: 1; }
 
 #email {
   margin-left: -1.7em; }
@@ -228,7 +260,8 @@ a, a:visited, a:hover, a:active {
   transition: 0.5s color ease;
   text-decoration: none;
   color: #523249;
-  font-size: 2.5em; }
+
+ }
 
 a:hover {
   color: $color4; }
@@ -369,10 +402,7 @@ hr.style1 {
 
 /*--------------------Logo-------------------*/
 .logo {
-/*  position: relative;
-*/  margin: auto;/*
-  margin-left: 20px;
-  margin-bottom: 10px;*/
+  margin: auto;
   width: 300px;
   height: 150px;
 }
@@ -383,29 +413,62 @@ hr.style1 {
 
 
 .content {
-  background-image: url("../img/circles-transparent.png");
+  background-image: url("../img/circles-dark-2.jpg");
   background-repeat: repeat;
-  padding-bottom: 6em;
 }
 
 .content-section {
   height: 600px;
-  // width: 90%;
   min-width: 1118px;
   padding: 6em 0; 
-  // background: linear-gradient(#fff,$color6);
 }
 
 .content-card{
   padding-top: 1em;
-    // background-color: $color6;
 height: 500px;
-  // background: #fff;
 width: 90%;
 }
 
-.expertise{
 
+.content-card {
+    position:relative;
+    width:95%;
+    padding:1em 1.5em;
+    margin:2em auto;
+    background-color: $color4;
+    background:$color1;
+    overflow:hidden;
+}
+
+.content-card:before {
+  content:"";
+  position:absolute;
+  top:0;
+  right:0;
+  border-width:0 140px 140px 0; /* This trick side-steps a webkit bug */
+  border-style:solid;
+  border-color:$color5 $color5 $color1 $color1; /* A bit more verbose to work with .rounded too */
+  background:transparent; /* For when also applying a border-radius */
+  display:block; width:0; /* Only for Firefox 3.0 damage limitation */
+  /* Optional: shadow */
+  -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+  -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+  box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+}
+
+
+.content-card.rounded {
+  -webkit-border-radius:5px 0 5px 5px;
+  -moz-border-radius:5px 0 5px 5px;
+  border-radius:5px 0 5px 5px;
+}
+
+.content-card.rounded:before {
+  border-width:28px; /* Triggers a 1px 'step' along the diagonal in Safari 5 (and Chrome 10) */
+  border-color:$color5 $color5 $color1 $color1; /* A bit more verbose to work with .rounded too */
+  -webkit-border-bottom-left-radius:5px;
+  -moz-border-radius:0 0 0 5px;
+  border-radius:0 0 0 5px;
 }
 
 .expertise-list {
@@ -419,7 +482,7 @@ width: 90%;
 }
 
 .expertise-item-title{
-    color: $color4;
+    color: $color5;
     margin: 1em auto 1em;
 
 }
@@ -588,7 +651,6 @@ width: 90%;
   margin-left: 2%;
   margin-right: 2%;
   display: flex;
-  float: left;
   list-style: none; }
 
 .welcome-photo {
@@ -608,12 +670,21 @@ width: 90%;
   height: 200px; 
 }
 
+.footer-link-list{
+      display: block;
+
+}
+
+.footer-link-item{
+  display:block;
+  font-size: 1em;
+}
+
 
 .footer::after {
   content: "";
   background-color: $color5;
   background-size: 100% auto;
-  opacity: 0.25;
   top: 0;
   left: 0;
   bottom: 0;
@@ -624,10 +695,9 @@ width: 90%;
 
 /*--------------------Welcome Page-------------------*/
 .social-icons-background{
-padding-top: 3em;
+  padding-top: 3em;
   width: 100%;
-  // opacity: .25;
-  	background-color: $color6;
+  background-color: $color5;
 }
 
 .social-icons-wrapper {
