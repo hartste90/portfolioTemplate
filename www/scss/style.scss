@@ -295,13 +295,17 @@ a.seventh:after {
   left: 0; }
 
 /*---*/
+.nav-outter-wrapper{
+    background-color: $color1;
+}
 .nav-wrapper {
   width: 500px;
   padding: 2em 1em;
   /*background-color: #DDD; */
   height: auto;
   margin: auto;
-  border-radius: 20px; }
+  border-radius: 20px; 
+}
 
 .nav-container {
   display: flex;
@@ -332,12 +336,17 @@ a.nav-button:hover {
   color: $color4; }
 
 /*--------------------Header-------------------*/
-.shadow {
+// .shadow {
+// -webkit-box-shadow: 0px 24px 42px 10px rgba(0,0,0,0.25);
+// -moz-box-shadow: 0px 24px 42px 10px rgba(0,0,0,0.25);
+// box-shadow: 0px 24px 32px 10px rgba(0,0,0,0.25);
+// }
+
+.shadow-small {
 -webkit-box-shadow: 0px 24px 42px 10px rgba(0,0,0,0.25);
 -moz-box-shadow: 0px 24px 42px 10px rgba(0,0,0,0.25);
-box-shadow: 0px 24px 42px 10px rgba(0,0,0,0.25);
+box-shadow: 5px 34px 30px 10px rgba(0,0,0,0.25);
 }
-
 
 
 
@@ -438,27 +447,27 @@ width: 90%;
     overflow:hidden;
 }
 
-.content-card:before {
-  content:"";
-  position:absolute;
-  top:0;
-  right:0;
-  border-width:0 140px 140px 0; /* This trick side-steps a webkit bug */
-  border-style:solid;
-  border-color:$color5 $color5 $color1 $color1; /* A bit more verbose to work with .rounded too */
-  background:transparent; /* For when also applying a border-radius */
-  display:block; width:0; /* Only for Firefox 3.0 damage limitation */
-  /* Optional: shadow */
-  -webkit-box-shadow: 0px 24px 42px 10px rgba(184,184,184,0.63);
--moz-box-shadow: 0px 24px 42px 10px rgba(184,184,184,0.63);
-box-shadow: 0px 24px 42px 10px rgba(184,184,184,0.63);
-}
+// .content-card:before {
+//   content:"";
+//   position:absolute;
+//   top:0;
+//   right:0;
+//   border-width:0 140px 140px 0; /* This trick side-steps a webkit bug */
+//   border-style:solid;
+//   border-color:$color5 $color5 $color1 $color1; /* A bit more verbose to work with .rounded too */
+//   background:transparent; /* For when also applying a border-radius */
+//   display:block; width:0; /* Only for Firefox 3.0 damage limitation */
+//   /* Optional: shadow */
+//           -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+//           -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+//           box-shadow:0 10px 10px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+// }
 
 
 .content-card.rounded {
   -webkit-border-radius:5px 0 5px 5px;
   -moz-border-radius:5px 0 5px 5px;
-  border-radius:5px 0 5px 5px;
+  border-radius:10px 10px 10px 10px;
 }
 
 .content-card.rounded:before {
@@ -508,8 +517,7 @@ box-shadow: 0px 24px 42px 10px rgba(184,184,184,0.63);
   display: flex;
   position: relative;
   margin: auto;
-  width: 80%;
-  padding-top: 6em;
+  padding-top: 4em;
 }
 
 .experience-list-item {
