@@ -1,18 +1,18 @@
 /*--------------------SCSS Variables-------------------*/
 
 /* RGB */
-$color1: rgba(203, 212, 194, 1);
+$eggshell: rgba(203, 212, 194, 1);
 $color2: rgba(187, 222, 240, 1);
 $color3: rgba(195, 178, 153, 1);
-$color4: rgba(129, 83, 85, 1);
-$color5: rgba(82, 50, 73, 1);
-$color6: rgba(212, 202, 209, .3);
+$rust: rgba(129, 83, 85, 1);
+$purple: rgba(82, 50, 73, 1);
+$light-purple: rgba(212, 202, 209, .3);
 $color7: rgba(212, 202, 209, .1);
-
+$red: #d73444;
  
 $dark-grey: #333;
 $gunmetal: rgb(107, 107, 107);
-$grey: #ccc;
+$grey: #aaa;
 $light-grey: #eee;
 
 /*--------------------Document-------------------*/
@@ -31,12 +31,12 @@ body {
 
 h1, h2, h3, h4, h5, h6, body, span {
   font-family: 'Encode Sans Expanded', sans-serif; 
-  color: $color5;
+  color: $purple;
 }
 
-h1, h2 {
-  font-weight: bold; }
-
+h1 {
+  margin-top: 60px;
+}
 h2 {
   margin-top: 10px; }
 
@@ -55,6 +55,7 @@ p {
 hr{
   width: 70%;
   margin: .5em;
+  border-top-color: $grey;
 }
 
 ol{
@@ -86,7 +87,7 @@ ol{
 
 .title-name::before {
   content: "  steve hart    "; 
-  color: $color1;
+  color: $eggshell;
   font-size: 2.5em;
   margin: 0px;
   transition: all .5s;
@@ -95,10 +96,10 @@ ol{
 
 .title-name:hover:before{
   transition: all .5s;
-  color: #fff;
+  color: $gunmetal;
 }
 
-.title-name#animated::before
+.title-name.animated::before
 {
   animation: writeName 2s linear forwards; 
 }
@@ -110,7 +111,7 @@ ol{
 
 .title::after {
   content: "";
-  background-color: $color5;
+  background-color: $purple;
   background-size: 100% auto;
   top: 0;
   left: 0;
@@ -158,7 +159,7 @@ ol{
   animation: blinker 2s linear infinite;
   margin-left: .2em; 
   width: .08em; 
-  background-color: $color1;
+  background-color: $eggshell;
   font-size: 2.5em;
 }
 
@@ -175,7 +176,7 @@ ol{
   font-family: 'Encode Sans Expanded', sans-serif;
   font-size: 15px;
   text-align: center;
-  color: $color1;
+  color: $eggshell;
 }
 
 /*--------------------Buttons-------------------*/
@@ -185,7 +186,7 @@ ol{
   border-radius: 25px;
   border: none;
   background: none;
-  color: $color1;
+  color: $eggshell;
   text-align: center;
   padding: 10px;
   width: 40px;
@@ -219,13 +220,13 @@ li .first {
   top: -2.2em;
   font-size: 15px;
   opacity: 0;
-  color: $color1;
+  color: $eggshell;
   transition: 0.5s;
   margin-left: -75%; }
 
 .button:hover {
   transition: .5s;
-  background-color:$color6; 
+  background-color:$light-purple; 
   }
 
 
@@ -264,7 +265,7 @@ a, a:visited, a:hover, a:active {
  }
 
 a:hover {
-  color: $color4; }
+  color: $rust; }
 
 a.before:before, a.after:after {
   content: "";
@@ -282,7 +283,7 @@ a.after:after {
 a.before:before, a.after:after {
   height: 2px;
   width: 0;
-  background: #d73444; }
+  background: $red; }
 
 a.before:hover:before, a.after:hover:after {
   width: 100%; }
@@ -296,7 +297,7 @@ a.seventh:after {
 
 /*---*/
 .nav-outter-wrapper{
-    background-color: $color1;
+    background-color: $eggshell;
 }
 .nav-wrapper {
   width: 500px;
@@ -333,7 +334,7 @@ a.nav-button.active {
 
 a.nav-button:hover {
   text-decoration: none;
-  color: $color4; }
+  color: $rust; }
 
 /*--------------------Header-------------------*/
 // .shadow {
@@ -397,8 +398,8 @@ hr.style1 {
 }
 
 .project-image-list-item{
-	width: 160px;
-	height: 120px;
+	width: 60px;
+	height: auto;
 	padding: 0px;
 	margin: 0em 1em;
 }
@@ -422,6 +423,7 @@ hr.style1 {
 .content {
   background-image: url("../img/circles-dark-2.jpg");
   background-repeat: repeat;
+  padding-bottom: 3em;
 }
 
 .content-section {
@@ -442,8 +444,16 @@ width: 90%;
     width:95%;
     padding:1em 1.5em;
     margin:2em auto;
-    background-color: $color4;
-    background:$color1;
+    // background-color: $rust;
+    // background:$eggshell;
+//    background: rgb(82,50,73); /* Old browsers */
+// background: -moz-linear-gradient(-45deg, rgba(82,50,73,1) 0%, rgba(84,84,84,1) 100%); /* FF3.6-15 */
+// background: -webkit-linear-gradient(-45deg, rgba(82,50,73,1) 0%,rgba(84,84,84,1) 100%); /* Chrome10-25,Safari5.1-6 */
+// background: linear-gradient(135deg, rgba(82,50,73,1) 0%,rgba(84,84,84,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background: rgb(203,212,194); /* Old browsers */
+background: -moz-linear-gradient(-45deg, rgba(203,212,194,1) 0%, rgba(169,175,161,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(203,212,194,1) 0%,rgba(169,175,161,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(203,212,194,1) 0%,rgba(169,175,161,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     overflow:hidden;
 }
 
@@ -454,7 +464,7 @@ width: 90%;
 //   right:0;
 //   border-width:0 140px 140px 0; /* This trick side-steps a webkit bug */
 //   border-style:solid;
-//   border-color:$color5 $color5 $color1 $color1; /* A bit more verbose to work with .rounded too */
+//   border-color:$purple $purple $eggshell $eggshell; /* A bit more verbose to work with .rounded too */
 //   background:transparent; /* For when also applying a border-radius */
 //   display:block; width:0; /* Only for Firefox 3.0 damage limitation */
 //   /* Optional: shadow */
@@ -472,7 +482,7 @@ width: 90%;
 
 .content-card.rounded:before {
   border-width:28px; /* Triggers a 1px 'step' along the diagonal in Safari 5 (and Chrome 10) */
-  border-color:$color5 $color5 $color1 $color1; /* A bit more verbose to work with .rounded too */
+  border-color:$purple $purple $eggshell $eggshell; /* A bit more verbose to work with .rounded too */
   -webkit-border-bottom-left-radius:5px;
   -moz-border-radius:0 0 0 5px;
   border-radius:0 0 0 5px;
@@ -485,11 +495,11 @@ width: 90%;
 #expertise i
 {
   font-size: 3em;
-  color: $color5;
+  color: $purple;
 }
 
 .expertise-item-title{
-    color: $color5;
+    color: $purple;
     margin: 1em auto 1em;
 
 }
@@ -505,9 +515,8 @@ width: 90%;
 }
 
 .expertise-description{
-  // background-color: #ddd;
-  //min-width: 300px;
   padding: 5px;
+  text-align: left;
 }
 
 .experience{
@@ -542,7 +551,7 @@ width: 90%;
 
 .experience-list-item-text {
   transition: .5s ease;
-  color: $color5;
+  color: $purple;
   font-weight: 800;
   width: 90%;
   opacity: 0;
@@ -573,9 +582,6 @@ width: 90%;
 
 
 
-.education {
-}
-
 .education-list {
   display: flex;
   position: relative;
@@ -583,21 +589,22 @@ width: 90%;
  }
 
 #education-icon{
-  color: $color4;
+  color: $rust;
 
 }
 
 .education-list-item {
   width: 30%;
-  // border-radius: 2em;
-  // border: solid #aaa;
-  // border-width: .2em;
-  /*padding: 2em;*/
    }
 
 #education-spacer{
   width: 100px;
+}
 
+.detail-text{
+  font-size: 1em; 
+  margin: 0; 
+  padding: 1em .5em 0em;
 }
 
 .vertical-spacer-1x{
@@ -648,7 +655,7 @@ width: 90%;
 
 .talks-item{
   font-size:  1.2em;
-  color: $color4;
+  color: $purple;
 }
 
 /*--------------------Welcome Page-------------------*/
@@ -657,7 +664,14 @@ width: 90%;
   margin-left: 2%;
   margin-right: 2%;
   display: flex;
-  list-style: none; }
+  list-style: none; 
+padding-top: 6em;
+padding-bottom: 6em;
+}
+
+.welcome-list li{
+  margin: 0px 10px;
+}
 
 .welcome-photo {
   position: relative;
@@ -668,12 +682,12 @@ width: 90%;
 
   position: absolute;
   text-align: center;
-  padding: 10px 10px 10px 10px;
+  padding: 100px 10px 10px 10px;
   display: flex;
   margin-top: 300px;
   width: 100%;
   bottom: 0px;
-  height: 200px; 
+  height: 350px; 
 }
 
 .footer-link-list{
@@ -681,15 +695,20 @@ width: 90%;
 
 }
 
-.footer-link-item{
+a.footer-link-item{
   display:block;
   font-size: 1em;
+  color: $eggshell;
+}
+
+a.footer-link-item:hover{
+  color: $gunmetal;
 }
 
 
 .footer::after {
   content: "";
-  background-color: $color5;
+  background-color: $purple;
   background-size: 100% auto;
   top: 0;
   left: 0;
@@ -703,7 +722,7 @@ width: 90%;
 .social-icons-background{
   padding-top: 3em;
   width: 100%;
-  background-color: $color5;
+  background-color: $purple;
 }
 
 .social-icons-wrapper {
@@ -720,7 +739,7 @@ width: 90%;
   list-style: none; }
 
 .footer-text {
-  color: #aaa;
+  color: $eggshell;
   margin: auto; }
 
 .about_wrapper, .contact_wrapper {
@@ -881,7 +900,8 @@ section img {
 
   .welcome-list {
     display: block;
-    margin: 0; }
+    margin: 0; 
+  }
 
   .welcome-photo {
     max-width: 2000px;

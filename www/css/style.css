@@ -17,8 +17,8 @@ h1, h2, h3, h4, h5, h6, body, span {
   font-family: 'Encode Sans Expanded', sans-serif;
   color: #523249; }
 
-h1, h2 {
-  font-weight: bold; }
+h1 {
+  margin-top: 60px; }
 
 h2 {
   margin-top: 10px; }
@@ -31,7 +31,8 @@ p {
 
 hr {
   width: 70%;
-  margin: .5em; }
+  margin: .5em;
+  border-top-color: #aaa; }
 
 ol {
   color: #6b6b6b; }
@@ -62,9 +63,9 @@ ol {
 
 .title-name:hover:before {
   transition: all .5s;
-  color: #fff; }
+  color: #6b6b6b; }
 
-.title-name#animated::before {
+.title-name.animated::before {
   animation: writeName 2s linear forwards; }
 
 .header {
@@ -335,8 +336,8 @@ hr.style1 {
   padding: 1em 0em; }
 
 .project-image-list-item {
-  width: 160px;
-  height: 120px;
+  width: 60px;
+  height: auto;
   padding: 0px;
   margin: 0em 1em; }
 
@@ -356,7 +357,8 @@ hr.style1 {
 
 .content {
   background-image: url("../img/circles-dark-2.jpg");
-  background-repeat: repeat; }
+  background-repeat: repeat;
+  padding-bottom: 3em; }
 
 .content-section {
   height: 600px;
@@ -373,8 +375,14 @@ hr.style1 {
   width: 95%;
   padding: 1em 1.5em;
   margin: 2em auto;
-  background-color: #815355;
   background: #cbd4c2;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #cbd4c2 0%, #a9afa1 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #cbd4c2 0%, #a9afa1 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #cbd4c2 0%, #a9afa1 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   overflow: hidden; }
 
 .content-card.rounded {
@@ -410,7 +418,8 @@ hr.style1 {
   color: #777; }
 
 .expertise-description {
-  padding: 5px; }
+  padding: 5px;
+  text-align: left; }
 
 .experience-list {
   display: flex;
@@ -471,11 +480,15 @@ hr.style1 {
   color: #815355; }
 
 .education-list-item {
-  width: 30%;
-  /*padding: 2em;*/ }
+  width: 30%; }
 
 #education-spacer {
   width: 100px; }
+
+.detail-text {
+  font-size: 1em;
+  margin: 0;
+  padding: 1em .5em 0em; }
 
 .vertical-spacer-1x {
   width: 100%;
@@ -512,7 +525,7 @@ hr.style1 {
 
 .talks-item {
   font-size: 1.2em;
-  color: #815355; }
+  color: #523249; }
 
 /*--------------------Welcome Page-------------------*/
 .welcome-list {
@@ -520,7 +533,12 @@ hr.style1 {
   margin-left: 2%;
   margin-right: 2%;
   display: flex;
-  list-style: none; }
+  list-style: none;
+  padding-top: 6em;
+  padding-bottom: 6em; }
+
+.welcome-list li {
+  margin: 0px 10px; }
 
 .welcome-photo {
   position: relative;
@@ -530,19 +548,23 @@ hr.style1 {
 .footer {
   position: absolute;
   text-align: center;
-  padding: 10px 10px 10px 10px;
+  padding: 100px 10px 10px 10px;
   display: flex;
   margin-top: 300px;
   width: 100%;
   bottom: 0px;
-  height: 200px; }
+  height: 350px; }
 
 .footer-link-list {
   display: block; }
 
-.footer-link-item {
+a.footer-link-item {
   display: block;
-  font-size: 1em; }
+  font-size: 1em;
+  color: #cbd4c2; }
+
+a.footer-link-item:hover {
+  color: #6b6b6b; }
 
 .footer::after {
   content: "";
@@ -575,7 +597,7 @@ hr.style1 {
   list-style: none; }
 
 .footer-text {
-  color: #aaa;
+  color: #cbd4c2;
   margin: auto; }
 
 .about_wrapper, .contact_wrapper {
