@@ -23,6 +23,7 @@
 
   <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
   <script src="src/projectImageSwap.js"></script>
+  <script src="src/socialmediabuttons.js"></script>
 
 
 </head>
@@ -47,19 +48,19 @@
         <div>
           <ul class="social-icon-button-list">
             <li>
-              <button id="social-media-icon" class="button first">
+              <button id="social-media-icon" class="button first" data-clipboard-text="steven.hart282@gmail.com">
                 <i class="far fa-envelope"></i>
-                <span id="email">Email</span>
+                <span id="email">Contact</span>
               </button>
             </li>
             <li>
-              <button id="social-media-icon" class="button">
+              <button id="social-media-icon" class="button" onclick="redirectToLinkedin()">
                 <i class="fab fa-linkedin"></i>
                 <span id="linkedin">LinkedIn</span>
               </button>
             </li>
             <li>
-              <button id="social-media-icon" class="button">
+              <button id="social-media-icon" class="button" onclick="redirectToGithub()">
                 <i class="fab fa-github"></i>
                 <span id="github">GitHub</span>
               </button>
@@ -69,14 +70,22 @@
       </div>
     </div>
     <div class="title" alt="Go Home">
+
       <a class="title-name" href="index.html">
         <div class="blink_me"></div>
       </a>
       <div class="subtitle">
         engineer
       </div>
+
+
+
     </div>
-    <div class="shadow">
+    <div class="">
+
+
+
+
       <div class="nav-outter-wrapper">
         <div class="nav-wrapper">
           <div class="nav-container">

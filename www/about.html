@@ -12,6 +12,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
   <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
 
   <link href="css/style.css" rel="stylesheet">
@@ -23,6 +24,7 @@
 
   <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
   <script src="src/projectImageSwap.js"></script>
+  <script src="src/socialmediabuttons.js"></script>
 
 
 </head>
@@ -47,19 +49,19 @@
         <div>
           <ul class="social-icon-button-list">
             <li>
-              <button id="social-media-icon" class="button first">
+              <button id="social-media-icon" class="button first" data-clipboard-text="steven.hart282@gmail.com">
                 <i class="far fa-envelope"></i>
                 <span id="email">Contact</span>
               </button>
             </li>
             <li>
-              <button id="social-media-icon" class="button">
+              <button id="social-media-icon" class="button" onclick="redirectToLinkedin()">
                 <i class="fab fa-linkedin"></i>
                 <span id="linkedin">LinkedIn</span>
               </button>
             </li>
             <li>
-              <button id="social-media-icon" class="button">
+              <button id="social-media-icon" class="button" onclick="redirectToGithub()">
                 <i class="fab fa-github"></i>
                 <span id="github">GitHub</span>
               </button>
@@ -312,7 +314,7 @@
       setTimeout( function ()
       {
         $( btn ).tooltip( 'hide' );
-      }, 1000 );
+      }, 2000 );
     }
 
     // Clipboard
